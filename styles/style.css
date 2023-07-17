@@ -1,0 +1,90 @@
+@import url("header.css");
+@import url("body.css");
+@import url("footer.css");
+
+:root{
+  /* modo escuro */
+  --cor-principal: #302D2C;
+  --cor-principal-deg: #302d2cc9;
+  --cor-segundaria:#464342;
+  --fonte-principal: 'Montserrat', sans-serif;
+  --fonte-subtitulo: 'Roboto', sans-serif;
+  --cor-titulo: #ebc4b0;
+  --sub-titulo: #EBCCBB;
+  --cor-texto: #c9c2c0;
+  --borda: solid .01vw rgb(172, 170, 170); 
+  --background-card: url(../img/mocha-01_3eb3a5cd.jpg);
+  --filtro:brightness(35%);
+  --borda-menu: solid .01vw #ebc4b0;
+ 
+
+
+  /* modo claro */
+  /* --cor-principal: #c7c7c7;
+  --cor-principal-deg: #c7c7c780;
+  --cor-segundaria:#b6b6b6;
+  --fonte-principal: 'Montserrat', sans-serif;
+  --fonte-subtitulo: 'Roboto', sans-serif;
+  --cor-titulo: #202020;
+  --sub-titulo: #242424;
+  --cor-texto: #2e2e2e;
+  --cor-borda: solid .01vw rgb(70, 70, 70);
+  --background-card: url(../img/oatmeal-01_4e7de307.jpg);
+  --filtro:brightness(50%); */
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3.5vw;
+  background-color: var(--cor-principal);
+}
+
+body {
+  overflow-x: hidden;
+
+}
+
+::-webkit-scrollbar-track{
+  background-color: rgb(20, 20, 20);
+}
+
+::-webkit-scrollbar {
+  width: .75vw
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(175, 175, 175, 0.267);
+  border-radius: .1vw;
+}
+
+::selection {
+  background-color: yellow;
+  color: rgb(26, 26, 26);
+  -webkit-text-fill-color: black;
+}
+
+/* globais */
+
+.titulo{
+  color: var(--cor-titulo);
+  font-family: var(--fonte-principal);
+  font-weight: 600;
+  font-size: 2.75vw;
+  margin-bottom: 2.5vw;
+}
+
+.subtitulo{
+  font-size: 1.75vw;
+  font-weight: 600;
+  margin-bottom: 1.5vw;
+  color: var(--sub-titulo);
+  font-family: var(--fonte-subtitulo);
+}
+
+.texto{
+  color: var(--cor-texto);
+  font-family: var(--fonte-principal);
+  font-size: 1.25vw;
+  line-height: 2.25vw;
+  font-weight: 500;
+}

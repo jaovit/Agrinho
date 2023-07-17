@@ -1,0 +1,120 @@
+.botao {
+    position: fixed;
+    top: 1.24vw;
+    right: 2vw;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    width: 3.5vw;
+    height: 3.5vw;
+    transform: scaleX(-1);
+}
+
+#menu_input {
+    display: none;
+}
+
+.botao div {
+    position: absolute;
+    background: #d2d2d2;
+    height: .25vw;
+    border-radius: 1vw;
+    transition: all 1s;
+}
+
+.b-um {
+    width: 2.35vw;
+    top: .875vw;
+}
+
+input[type="checkbox"]:checked~.botao .b-um {
+    transform: rotate(45deg) translate(.4vw, .6vw);
+    width: 2.35vw;
+}
+
+.b-dois {
+    width: 1.85vw;
+    top: 50%;
+    translate: 0 -50%;
+    transition: all .75s;
+}
+
+input[type="checkbox"]:checked~.botao .b-dois {
+    background: transparent;
+}
+
+.b-tres {
+    width: .85vw;
+    bottom: .875vw;
+}
+
+input[type="checkbox"]:checked~.botao .b-tres {
+    transform: rotate(-45deg) translate(.4vw, -.6vw);
+    width: 2.35vw;
+}
+
+.conteudo {
+    position: fixed;
+    right: -25.2vw;
+    width: 25vw;
+    height: 100%;
+    z-index: 1;
+    transition: transform .5s;
+    border-left:var(--borda-menu);
+    background: rgba(15, 15, 15, .7);
+}
+
+input[type="checkbox"]:checked~.conteudo {
+    transform: translateX(-25.2vw)
+}
+
+.menu .subtitulo{
+    position: absolute;
+    left: 50%;
+    top: 2.5vw;
+    translate: -50% 0; 
+    color:#EBCCBB;
+}
+
+.opcoes{
+    position: absolute;
+    top: 7vw;
+    width: 100%; 
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.opcoes .itens{
+    border-bottom:var(--borda-menu) ;
+    border-top:var(--borda-menu);
+    /* ou centralizar */
+    width: calc(100% - 1.5vw);
+    height: 4.75vw;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5vw;
+}
+
+.opcoes .itens:hover{
+    background-image: linear-gradient(to left, #ebccbbe3 -25%, #ebccbb00 90%);
+}
+/* tablet
+@media (max-width: 850px) {
+    .template {
+        background-color: red;
+    }
+}
+
+    celular 
+@media (max-width: 500px) {
+
+    .template {
+        background-color: rgb(12, 245, 90);
+    }
+} 
+    ultra wide
+@media (min-width: 1440px) {
+    .template {
+        background-color: rgb(12, 245, 90);
+    }
+}

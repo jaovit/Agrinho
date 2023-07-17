@@ -1,0 +1,308 @@
+.template {
+    position: relative;
+    height: 38vw;
+}
+
+.template::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../img/Header-Desktop_Floresta_Europeia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -2;
+}
+
+.template::after {
+    content: '';
+    position: absolute;
+    top: 15%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, var(--cor-principal), var(--cor-principal-deg) 50%, transparent);
+    z-index: -1;
+}
+
+.texto_1 {
+    position: absolute;
+    top: 10vw;
+    left: 51%;
+    translate: -50% 0;
+    width: 70vw;
+}
+
+.texto_1 .titulo {
+    background-image: linear-gradient(to right, var(--cor-titulo), var(--cor-texto));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.85vw;
+    line-height: 4.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.texto_1 .texto {
+    padding-left: 1vw;
+}
+
+.template img {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 58.5vw;
+    translate: 0 -50%;
+    width: 25vw;
+    border-radius: .75vw;
+}
+
+/* topicos  */
+
+.topicos {
+    position: relative;
+    height: 25vw;
+}
+
+.topicos .titulo {
+    position: absolute;
+    top: 3vw;
+    left: 50%;
+    translate: -50% 0;
+    font-size: 2vw;
+    color: var(--cor-titulo);
+}
+
+.topicos_lista {
+    position: absolute;
+    top: 6vw;
+    left: 50%;
+    translate: -50% 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.topicos_lista .itens {
+    margin: .25vw .5vw;
+}
+
+.topicos_lista .itens a:before {
+    content: '\2022';
+    transform: scale(1.5);
+    color: var(--cor-texto);
+    margin: 0 1vw 0 .5vw;
+}
+
+.topicos_lista .itens a {
+    display: flex;
+    align-items: center;
+    width: 23vw;
+    height: 4.5vw;
+    border: solid .01vw transparent;
+    border-radius: .5vw;
+    transition: .25s;
+    font-size: 1.15vw;
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+}
+
+.topicos_lista .itens a:hover {
+    background-color: rgba(255, 255, 255, 0.055);
+    transform: scale(1.025);
+    border: var(--borda);
+}
+
+/* importancia da sustentabilidade */
+
+.impor_susten {
+    position: relative;
+    height: 27vw;
+    border-top: var(--borda);
+    border-bottom: var(--borda);
+
+}
+
+.impor_susten::before,
+.mudar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--background-card);
+    filter: var(--filtro);
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+}
+
+.texto_2,
+.texto_6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 62.5vw;
+}
+
+/* ações sustentaveis */
+
+.acoes_susten,
+.aplicar_acoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vw;
+    background-color: var(--cor-principal);
+}
+
+.texto_3,
+.texto_4 {
+    flex-basis: 60vw;
+    border-radius: 1vw;
+    background-color: var(--cor-segundaria);
+    padding: 4vw;
+}
+
+/* exemplos de ações sustentaveis */
+
+.ex_acoes {
+    position: relative;
+    height: 43.5vw;
+    background-color: var(--cor-segundaria);
+}
+
+.ex_acoes .titulo {
+    position: absolute;
+    top: 3vw;
+    left: 50%;
+    translate: -50% 0;
+}
+
+.lista_1 {
+    position: absolute;
+    left: 50%;
+    top: 8vw;
+    translate: -50% 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80vw;
+    text-align: center;
+}
+
+.lista_1 .itens {
+    padding: 1vw;
+}
+
+/* como aplicar as ações */
+
+.aplicar_acoes {
+    height: 28vw;
+}
+
+.texto_4 {
+    width: 65vw;
+}
+
+/* benefcios */
+
+.benefcios {
+    position: relative;
+    height: 35vw;
+    background-color: var(--cor-segundaria);
+}
+
+.texto_5 {
+    position: absolute;
+    top: 50%;
+    left: 15vw;
+    translate: 0 -50%;
+    width: 35vw;
+}
+
+.benefcios img {
+    position: absolute;
+    left: 60vw;
+    top: 50%;
+    translate: 0 -50%;
+    width: 25vw;
+}
+
+/* impactos */
+
+.impactos {
+    position: relative;
+    height: 53vw;
+    background-color: var(--cor-principal);
+
+}
+
+.lista_2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 1vw;
+    background-color: var(--cor-segundaria);
+    text-align: center;
+    padding: 1.5vw 4vw;
+}
+
+.lista_2 .titulo {
+    grid-column: 1 / -1;
+    margin-top: 1vw;
+}
+
+.lista_2 .itens {
+    padding: .5vw;
+    width: 20vw;
+}
+
+.lista_2 img {
+    padding-bottom: 1vw;
+    width: 17vw;
+    border-radius: 1vw;
+}
+
+/* mudar */
+
+.mudar {
+    position: relative;
+    height: 27vw;
+    border-top: var(--borda);
+    border-bottom: var(--borda);
+
+}
+
+.mudar::before {
+    background-position: center top;
+}
+
+
+
+/* @media (max-width: 850px) {
+    .template {
+        background-color: red;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .template {
+        background-color: rgb(12, 245, 90);
+    }
+} 
+@media (min-width: 1440px) {
+    .template {
+        background-color: rgb(1, 0, 59);
+    }
+} */
