@@ -1,20 +1,17 @@
 .template {
     position: relative;
     height: 40vw;
+    border: none;
 }
 
-.template.claro{
+.template.claro {
     height: 35vw;
     border-bottom: var(--borda);
 }
 
 .template::before {
-    content: '';
-    position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
     background-image: url(../img/Header-Desktop_Floresta_Europeia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,22 +20,19 @@
     filter: opacity(0.7);
 }
 
-.template.claro::before{
+.template.claro::before {
     filter: opacity(0.5);
 }
 
 .template::after {
     content: '';
-    position: absolute;
-    top: 15%;
-    bottom: 0;
+    top: 5%;
     left: 0;
-    right: 0;
     background: linear-gradient(to top, var(--cor-principal), var(--cor-principal-deg) 50%, transparent);
     z-index: -1;
 }
 
-.template.claro::after{
+.template.claro::after {
     background: var(--cor-principal);
     top: 0;
     z-index: -3;
@@ -146,12 +140,8 @@
 
 .impor_susten::before,
 .mudar::before {
-    content: "";
-    position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
     background-image: var(--background-card);
     filter: var(--filtro);
     background-size: cover;
@@ -202,7 +192,7 @@
     translate: -50% 0;
 }
 
-.lista_1 {
+.ex_acoes .lista {
     position: absolute;
     left: 50%;
     top: 8vw;
@@ -214,7 +204,7 @@
     text-align: center;
 }
 
-.lista_1 .itens {
+.ex_acoes .lista .itens {
     padding: 1vw;
 }
 
@@ -261,7 +251,7 @@
 
 }
 
-.lista_2 {
+.impactos .lista {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -274,17 +264,17 @@
     padding: 1.5vw 4vw;
 }
 
-.lista_2 .titulo {
+.impactos .lista .titulo {
     grid-column: 1 / -1;
     margin-top: 1vw;
 }
 
-.lista_2 .itens {
+.impactos .lista .itens {
     padding: .5vw;
     width: 20vw;
 }
 
-.lista_2 img {
+.impactos .lista img {
     padding-bottom: 1vw;
     width: 17vw;
     border-radius: 1vw;
