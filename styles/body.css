@@ -25,7 +25,7 @@
 
 .template::after {
     content: '';
-    top: 2vw;
+    top: 3vw;
     height: 100%;
     left: 0;
     background: linear-gradient(to top, var(--cor-principal) 7%, var(--cor-principal-deg) 55%, transparent);
