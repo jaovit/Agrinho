@@ -28,7 +28,7 @@
   --cor-titulo: #202020;
   --sub-titulo: #242424;
   --cor-texto: #2e2e2e;
-  --cor-borda: solid .01vw rgb(70, 70, 70);
+  --borda: solid .01vw rgb(70, 70, 70);
   --background-card: url(../img/oatmeal-01_4e7de307.jpg);
   --filtro:brightness(50%); */
 }
@@ -64,6 +64,9 @@ body {
 }
 
 /* globais */
+
+/* *:not(){
+} */
 
 .titulo{
   color: var(--cor-titulo);

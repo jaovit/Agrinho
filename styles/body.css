@@ -1,6 +1,11 @@
 .template {
     position: relative;
-    height: 38vw;
+    height: 40vw;
+}
+
+.template.claro{
+    height: 35vw;
+    border-bottom: var(--borda);
 }
 
 .template::before {
@@ -15,6 +20,11 @@
     background-size: cover;
     background-position: center center;
     z-index: -2;
+    filter: opacity(0.7);
+}
+
+.template.claro::before{
+    filter: opacity(0.5);
 }
 
 .template::after {
@@ -28,10 +38,16 @@
     z-index: -1;
 }
 
+.template.claro::after{
+    background: var(--cor-principal);
+    top: 0;
+    z-index: -3;
+}
+
 .texto_1 {
     position: absolute;
-    top: 10vw;
-    left: 51%;
+    top: 9.5vw;
+    left: 53.5%;
     translate: -50% 0;
     width: 70vw;
 }
@@ -65,6 +81,7 @@
 .topicos {
     position: relative;
     height: 25vw;
+    transition: all .3s;
 }
 
 .topicos .titulo {

@@ -16,7 +16,7 @@
 
 .botao div {
     position: absolute;
-    background: #d2d2d2;
+    background-color: var(--cor-texto) ;
     height: .25vw;
     border-radius: 1vw;
     transition: all 1s;
