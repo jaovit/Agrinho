@@ -70,16 +70,12 @@ input[type="checkbox"]:checked~.conteudo {
 }
 
 .menu .subtitulo{
-    position: absolute;
-    top: 2.5vw;
-    left: 50%;
-    translate: -50% 0; 
+    margin: 2vw 0;
+    text-align: center;
     color:#EBCCBB;
 }
 
 .opcoes{
-    position: absolute;
-    top: 7vw;
     width: 100%; 
     display: grid;
     grid-template-rows: auto;

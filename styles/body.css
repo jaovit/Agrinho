@@ -20,7 +20,7 @@
 }
 
 .template.claro::before {
-    filter: opacity(0.5);
+    filter: opacity(0.7) brightness(50%);
 }
 
 .template::after {
@@ -41,8 +41,7 @@
 .texto_1 {
     position: absolute;
     top: 9.5vw;
-    left: 53.5%;
-    translate: -50% 0;
+    left: 18.5vw;
     width: 70vw;
 }
 
@@ -56,42 +55,35 @@
     margin-bottom: 1.5vw;
 }
 
+.texto_1 .titulo.claro{
+    background-image: none;
+    -webkit-text-fill-color: rgb(17, 17, 17);
+}
+
 .texto_1 .texto {
     padding-left: 1vw;
 }
 
-.template img {
-    position: absolute;
-    display: none;
-    top: 50%;
-    left: 58.5vw;
-    translate: 0 -50%;
-    width: 25vw;
-    border-radius: .75vw;
+.texto_1 .texto.claro{
+    color: rgb(22, 22, 22);
 }
 
 /* topicos  */
 
 .topicos {
     position: relative;
-    height: 25vw;
+    padding: 1.5vw 15vw 2.5vw 15vw;
     transition: all .3s;
 }
 
 .topicos .titulo {
-    position: absolute;
-    top: 3vw;
-    left: 50%;
-    translate: -50% 0;
+    text-align: center;
     font-size: 2vw;
     color: var(--cor-titulo);
+    margin-bottom: 1.5vw;
 }
 
 .topicos_lista {
-    position: absolute;
-    top: 6vw;
-    left: 50%;
-    translate: -50% 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -130,9 +122,12 @@
 
 /* importancia da sustentabilidade */
 
-.impor_susten {
+.impor_susten, .mudar {
     position: relative;
-    height: 27vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
     border-top: var(--borda);
     border-bottom: var(--borda);
 
@@ -151,10 +146,6 @@
 
 .texto_2,
 .texto_6 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
     width: 62.5vw;
 }
 
@@ -165,7 +156,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vw;
+    padding: 3vw;
     background-color: var(--cor-principal);
 }
 
@@ -181,27 +172,17 @@
 
 .ex_acoes {
     position: relative;
-    height: 43.5vw;
+    padding: 3vw;
+    text-align: center;
     background-color: var(--cor-segundaria);
 }
 
-.ex_acoes .titulo {
-    position: absolute;
-    top: 3vw;
-    left: 50%;
-    translate: -50% 0;
-}
-
 .ex_acoes .lista {
-    position: absolute;
-    left: 50%;
-    top: 8vw;
-    translate: -50% 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 80vw;
-    text-align: center;
+    padding: 0 5vw;
+    margin: 0 5vw;
 }
 
 .ex_acoes .lista .itens {
@@ -209,10 +190,6 @@
 }
 
 /* como aplicar as ações */
-
-.aplicar_acoes {
-    height: 28vw;
-}
 
 .texto_4 {
     width: 65vw;
@@ -222,23 +199,19 @@
 
 .benefcios {
     position: relative;
-    height: 35vw;
+    display: flex;
+    align-items: center;
+    padding: 3.5vw;
     background-color: var(--cor-segundaria);
 }
 
 .texto_5 {
-    position: absolute;
-    top: 50%;
-    left: 15vw;
-    translate: 0 -50%;
+    margin-left: 12vw;
     width: 35vw;
 }
 
 .benefcios img {
-    position: absolute;
-    left: 60vw;
-    top: 50%;
-    translate: 0 -50%;
+    margin-left: 5vw;
     width: 25vw;
 }
 
@@ -246,22 +219,19 @@
 
 .impactos {
     position: relative;
-    height: 53vw;
+    padding: 3.5vw 15vw;
     background-color: var(--cor-principal);
 
 }
 
 .impactos .lista {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border-radius: 1vw;
     background-color: var(--cor-segundaria);
     text-align: center;
-    padding: 1.5vw 4vw;
+    padding: 1.5vw 3vw;
 }
 
 .impactos .lista .titulo {
@@ -270,7 +240,7 @@
 }
 
 .impactos .lista .itens {
-    padding: .5vw;
+    margin: .5vw auto;
     width: 20vw;
 }
 
@@ -281,14 +251,6 @@
 }
 
 /* mudar */
-
-.mudar {
-    position: relative;
-    height: 27vw;
-    border-top: var(--borda);
-    border-bottom: var(--borda);
-
-}
 
 .mudar::before {
     background-position: center top;
