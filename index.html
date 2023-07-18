@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/reset.css">
   <script src="js/main.js" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +21,7 @@
   <header class="cabecalho">
 
     <div class="menu">
+      <!-- aparecer em tela pequena -->
       <input type="checkbox" id="menu_input">
       <label for="menu_input" class="botao">
         <div class="b-um"></div>
@@ -34,8 +34,18 @@
         </h4>
         <ul class="opcoes">
           <li class="itens">
-            <div class="modos"><input type="button" value="modo claro/escuro " style=" font-size: 1.25vw; margin: 2vw;"
-                onclick="mudarRoot()">
+            
+            <!-- <ul class="configuracao"> 
+              <li class="itens"> -->
+                <div class="modos"><input type="button" value="modo claro/escuro " style=" font-size: 1.25vw; margin: 2vw;"
+                  onclick="mudarRoot()">
+              <!-- </li>
+              <li class="itens">
+                <div class="modos"><input type="button" value="modo claro/escuro " style=" font-size: 1.25vw; margin: 2vw;"
+                  onclick="mudarRoot()">
+              </li> -->
+            </ul>
+
           </li>
         </ul>
       </nav>
@@ -43,16 +53,15 @@
 
   </header>
 
-  <div class="template content">
+  <div class="template content modo">
     <section class="texto_1">
-      <h1 class="titulo">
+      <h1 class="titulo modo">
         Sustentabilidade: Ações que mudam o mundo
       </h1>
-      <p class="texto">Mais do que uma palavra da moda, a sustentabilidade é um objetivo a ser alcançado. Juntos,
+      <p class="texto modo">Mais do que uma palavra da moda, a sustentabilidade é um objetivo a ser alcançado. Juntos,
         podemos tornar o mundo
         um lugar melhor. Descubra o que pode ser feito através de ações sustentáveis!</p>
     </section>
-    <img src="img/teste.png" alt="foto de background, uma florestas" class="template_img">
   </div>
 
   <div class="topicos">
@@ -102,7 +111,7 @@
       <p class="texto">
         Ações sustentáveis são iniciativas que visam equilibrar as demandas socioeconômicas com a preservação do meio
         ambiente. São atividades que reduzem a poluição, o uso inadequado de recursos, a produção excessiva de lixo,
-        entre outros problemas ambientais.
+        entre outros problemas ambientais. 
       </p>
     </section>
   </div>
