@@ -1,0 +1,144 @@
+.template {
+    position: relative;
+    height: 40vw;
+}
+
+.template.claro {
+    height: 35vw;
+    border-bottom: var(--borda);
+}
+
+.template::before {
+    top: 0;
+    left: 0;
+    background-image: url(../img/Header-Desktop_Floresta_Europeia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -2;
+    filter: opacity(0.6);
+}
+
+.template.claro::before {
+    filter: opacity(0.7) brightness(50%);
+}
+
+.template::after {
+    content: '';
+    top: 3vw;
+    height: 100%;
+    left: 0;
+    background: linear-gradient(to top, var(--cor-principal) 7%, var(--cor-principal-deg) 55%, transparent);
+    z-index: -1;
+}
+
+.template.claro::after {
+    background: var(--cor-principal);
+    top: 0;
+    z-index: -3;
+}
+
+.texto_1 {
+    position: absolute;
+    top: 9.5vw;
+    left: 18.5vw;
+    width: 70vw;
+}
+
+.texto_1 .titulo {
+    background-image: linear-gradient(to right, var(--cor-titulo), var(--cor-texto));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.85vw;
+    line-height: 4.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.texto_1 .titulo.claro{
+    background-image: none;
+    -webkit-text-fill-color: rgb(17, 17, 17);
+}
+
+.texto_1 .texto {
+    padding-left: 1vw;
+}
+
+.texto_1 .texto.claro{
+    color: rgb(22, 22, 22);
+}
+
+/* topicos  */
+
+.topicos {
+    position: relative;
+    padding: 1.5vw 15vw 2.5vw 15vw;
+    transition: all .3s;
+}
+
+.topicos .titulo {
+    text-align: center;
+    font-size: 2vw;
+    color: var(--cor-titulo);
+    margin-bottom: 1.5vw;
+}
+
+.topicos_lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.topicos_lista .itens {
+    margin: .25vw .5vw;
+}
+
+.topicos_lista a:before {
+    content: '\2022';
+    transform: scale(1.5);
+    color: var(--cor-texto);
+    margin: 0 1vw 0 .5vw;
+}
+
+.topicos_lista a{
+    display: flex;
+    align-items: center;
+    width: 23vw;
+    height: 4.5vw;
+    border: solid .01vw transparent;
+    border-radius: .5vw;
+    transition: .25s;
+    text-decoration: none;
+}
+
+.topicos_lista a:hover {
+    background-color: rgba(255, 255, 255, 0.055);
+    transform: scale(1.025);
+    border: var(--borda);
+}
+
+.topicos_lista .texto{
+    font-size: 1.15vw;
+  line-height: 1.35vw;
+}
+
+/* tablet */
+/* @media (max-width: 850px) {
+    .template {
+        background-color: red;
+    }
+} */
+
+    /* celular  */
+/* @media (max-width: 500px) {
+
+    .template {
+        background-color: rgb(12, 245, 90);
+    }
+}  */
+    /* ultra wide */
+/* @media (min-width: 1440px ) and (max-height: 550px){
+    .template {
+        background-color: rgb(12, 245, 90);
+    }
+} */

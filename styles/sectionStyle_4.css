@@ -1,0 +1,61 @@
+/* exemplos de ações sustentaveis */
+
+.ex_acoes {
+    position: relative;
+    padding: 3vw;
+    text-align: center;
+    background-color: var(--cor-segundaria);
+}
+
+.ex_acoes .lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0 5vw;
+    margin: 0 5vw;
+}
+
+.ex_acoes .itens {
+    padding: 1vw;
+}
+
+/* benefcios */
+
+.benefcios {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3.5vw;
+    background-color: var(--cor-segundaria);
+}
+
+.texto_5 {
+    margin-left: 12vw;
+    width: 35vw;
+}
+
+.benefcios img {
+    margin-left: 5vw;
+    width: 25vw;
+}
+
+/* tablet */
+/* @media (max-width: 850px) {
+    .template {
+        background-color: red;
+    }
+} */
+
+    /* celular  */
+/* @media (max-width: 500px) {
+
+    .template {
+        background-color: rgb(12, 245, 90);
+    }
+}  */
+    /* ultra wide */
+/* @media (min-width: 1440px ) and (max-height: 550px){
+    .template {
+        background-color: rgb(12, 245, 90);
+    }
+} */

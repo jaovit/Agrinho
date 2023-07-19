@@ -1,0 +1,80 @@
+/* ações sustentaveis */
+
+.acoes_susten,
+.aplicar_acoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+    background-color: var(--cor-principal);
+}
+
+.texto_3,
+.texto_4 {
+    flex-basis: 60vw;
+    border-radius: 1vw;
+    background-color: var(--cor-segundaria);
+    padding: 4vw;
+}
+
+/* como aplicar as ações */
+
+.texto_4 {
+    width: 65vw;
+}
+
+/* impactos */
+
+.impactos {
+    position: relative;
+    padding: 3.5vw 15vw;
+    background-color: var(--cor-principal);
+
+}
+
+.impactos .lista {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 1vw;
+    background-color: var(--cor-segundaria);
+    text-align: center;
+    padding: 1.5vw 3vw;
+}
+
+.impactos .titulo {
+    grid-column: 1 / -1;
+    margin-top: 1vw;
+}
+
+.impactos .itens {
+    margin: .5vw auto;
+    width: 20vw;
+}
+
+.impactos img {
+    padding-bottom: 1vw;
+    width: 17vw;
+    border-radius: 1vw;
+}
+
+/* tablet */
+/* @media (max-width: 850px) {
+    .template {
+        background-color: red;
+    }
+} */
+
+    /* celular  */
+/* @media (max-width: 500px) {
+
+    .template {
+        background-color: rgb(12, 245, 90);
+    }
+}  */
+    /* ultra wide */
+/* @media (min-width: 1440px ) and (max-height: 550px){
+    .template {
+        background-color: rgb(12, 245, 90);
+    }
+} */

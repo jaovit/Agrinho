@@ -1,5 +1,8 @@
 @import url("header.css");
-@import url("body.css");
+@import url("sectionStyle_1.css");
+@import url("sectionStyle_2.css");
+@import url("sectionStyle_3.css");
+@import url("sectionStyle_4.css");
 @import url("footer.css");
 
 
@@ -8,25 +11,23 @@
   --fonte-subtitulo: 'Roboto', sans-serif;
   --borda-menu: solid .01vw #ebc4b0;
   --cor-principal-deg: #302d2cc9;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* modo escuro */
-    --cor-principal: #302D2C;
-    --cor-segundaria: #464342;
-    --cor-titulo: #e4b7a0;
-    --sub-titulo: #EBCCBB;
-    --cor-texto: #c9c2c0;
-    --borda: solid .01vw rgb(172, 170, 170);
-    --background-card: url(../img/mocha-01_3eb3a5cd.jpg);
-    --filtro: brightness(35%);
-  }
+  /* por padrão escuro */
+  --cor-header:rgba(25, 25, 25, 0.75);
+  --cor-principal: #302D2C;
+  --cor-segundaria: #464342;
+  --cor-titulo: #e4b7a0;
+  --sub-titulo: #EBCCBB;
+  --cor-texto: #c9c2c0;
+  --borda: solid .01vw rgb(172, 170, 170);
+  --background-card: url(../img/mocha-01_3eb3a5cd.jpg);
+  --filtro: brightness(35%);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     /* modo claro */
+    --cor-header: #c7c7c7;
     --cor-principal: #c7c7c7;
     --cor-segundaria: #b6b6b6;
     --cor-titulo: #202020;
@@ -44,13 +45,13 @@ html {
   background-color: var(--cor-principal);
 }
 
-body {
+/* body {
   overflow-x: hidden;
-
-}
+} */
 
 ::-webkit-scrollbar {
-  width: .75vw
+  width: .575vw;
+  position: fixed;
 }
 
 ::-webkit-scrollbar-track {
@@ -58,7 +59,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(175, 175, 175, 0.267);
+  background: rgba(184, 184, 184, 0.267);
   border-radius: .1vw;
 }
 
@@ -70,26 +71,36 @@ body {
 
 /* globais */
 
-*{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	vertical-align: baseline;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .content::after,

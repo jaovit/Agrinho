@@ -1,0 +1,55 @@
+/* importancia da sustentabilidade */
+
+.impor_susten, .mudar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+    border-top: var(--borda);
+    border-bottom: var(--borda);
+
+}
+
+.impor_susten::before,
+.mudar::before {
+    top: 0;
+    left: 0;
+    background-image: var(--background-card);
+    filter: var(--filtro);
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+}
+
+.texto_2,
+.texto_6 {
+    width: 62.5vw;
+}
+
+/* mudar */
+
+.mudar::before {
+    background-position: center top;
+}
+
+/* tablet */
+/* @media (max-width: 850px) {
+    .template {
+        background-color: red;
+    }
+} */
+
+    /* celular  */
+/* @media (max-width: 500px) {
+
+    .template {
+        background-color: rgb(12, 245, 90);
+    }
+}  */
+    /* ultra wide */
+/* @media (min-width: 1440px ) and (max-height: 550px){
+    .template {
+        background-color: rgb(12, 245, 90);
+    }
+} */
