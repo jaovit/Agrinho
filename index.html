@@ -6,92 +6,132 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css">
+
+  <script src="js/tema.js" defer></script>
+  <script src="js/scroll.js" defer></script>
   <script src="js/main.js" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Roboto:wght@300;700;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:wght@300;700;900&display=swap"
     rel="stylesheet">
 
   <title>Sustentabilidade: Ações que mudam o mundo</title>
 </head>
 
 <body>
-  <header class="cabecalho">
 
-    <div class="menu">
-      <!-- aparecer em tela pequena -->
-      <input type="checkbox" id="menu_input">
-      <label for="menu_input" class="botao">
-        <div class="b-um"></div>
-        <div class="b-dois"></div>
-        <div class="b-tres"></div>
-      </label>
-      <nav class="conteudo">
-        <h4 class="subtitulo">
-          Menu
-        </h4>
-        <ul class="opcoes">
-          <li class="itens">
-            
-            <!-- <ul class="configuracao"> 
-              <li class="itens"> -->
-                <div class="modos"><input type="button" value="modo claro/escuro " style=" font-size: 1.25vw; margin: 2vw;"
-                  onclick="mudarRoot()">
-              <!-- </li>
-              <li class="itens">
-                <div class="modos"><input type="button" value="modo claro/escuro " style=" font-size: 1.25vw; margin: 2vw;"
-                  onclick="mudarRoot()">
-              </li> -->
-            </ul>
+  <header class="header scroll">
+    <input type="checkbox" id="menu_input">
 
-          </li>
-        </ul>
-      </nav>
+    <!-- <div class="logo">
+      <img src="" alt="">
+    </div> -->
+
+    <ul class="header_itens">
+      <li class="itens">
+        <a href="#">
+          <p class="texto tema">Pesquisa</p>
+        </a>
+      </li>
+
+      <li class="itens">
+        <a href="#">
+          <p class="texto tema">Contados</p>
+        </a>
+      </li>
+
+      <li class="itens">
+        <a href="#">
+          <p class="texto tema">Contados</p>
+        </a>
+      </li>
+
+      <li class="itens">
+        <a href="#">
+          <p class="texto tema">Entrar</p>
+        </a>
+      </li>
+
+      <li class="itens">
+        <nav class="configuracao">
+          <h4 class="subtitulo">
+            Configurações
+          </h4>
+          <ul class="opcoes">
+            <li class="itens">
+              <div class="modos"><input type="button" value="modo claro/escuro "
+                  style=" font-size: 1.25vw; margin: 2vw;" onclick="mudarRoot()">
+            </li>
+          </ul>
+        </nav>
+      </li>
+    </ul>
+
+    <!-- ou iconi de configuração -->
+    <div class="botao">
+      <label class="clic_js" for="menu_input"></label>
+      <div class="b-um"></div>
+      <div class="b-dois"></div>
+      <div class="b-tres"></div>
     </div>
 
   </header>
 
-  <div class="template content modo">
-    <section class="texto_1">
-      <h1 class="titulo modo">
+  <section class="template content tema">
+    <div class="texto_1">
+      <h1 class="titulo tema">
         Sustentabilidade: Ações que mudam o mundo
       </h1>
-      <p class="texto modo">Mais do que uma palavra da moda, a sustentabilidade é um objetivo a ser alcançado. Juntos,
+      <p class="texto tema">Mais do que uma palavra da moda, a sustentabilidade é um objetivo a ser alcançado. Juntos,
         podemos tornar o mundo
         um lugar melhor. Descubra o que pode ser feito através de ações sustentáveis!</p>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <div class="topicos">
+  <section class="topicos">
     <h3 class="titulo" id="topic_t"> Topícos </h3>
     <ul class="topicos_lista">
       <li class="itens">
-          <a href="#impor_susten">Por que a sustentabilidade é importante?</a>
+        <a href="#impor_susten">
+          <p class="texto">Por que a sustentabilidade é importante?</p>
+        </a>
       </li>
       <li class="itens">
-          <a href="#acoes_susten">Ações sustentaveis</a>
+        <a href="#acoes_susten">
+          <p class="texto">Ações sustentaveis</p>
+        </a>
       </li>
       <li class="itens">
-          <a href="#ex_acoes">Exemplos de ações sustentáveis</a>
+        <a href="#ex_acoes">
+          <p class="texto">Exemplos de ações sustentáveis</p>
+        </a>
       </li>
       <li class="itens">
-          <a href="#aplicar_acoes">Como aplicar essas ações no dia a dia?</a>
+        <a href="#aplicar_acoes">
+          <p class="texto">Como aplicar essas ações no dia a dia?</p>
+        </a>
       </li>
       <li class="itens">
-          <a href="#benefcios">Benefícios da Sustentabilidade</a>
+        <a href="#benefcios">
+          <p class="texto">Benefícios da Sustentabilidade</p>
+        </a>
       </li>
       <li class="itens">
-          <a href="#impactos">Impactos positivos ao meio ambiente</a>
+        <a href="#impactos">
+          <p class="texto">Impactos positivos ao meio ambiente</p>
+        </a>
       </li>
       <li class="itens">
-          <a href="#mudar">Mudando o mundo através da sustentabilidade</a>
+        <a href="#mudar">
+          <p class="texto">Mudando o mundo através da sustentabilidade</p>
+        </a>
       </li>
     </ul>
-  </div>
-  <div class="impor_susten content" id="impor_susten">
-    <section class="texto_2">
+  </section>
+  <section class="impor_susten content" id="impor_susten">
+    <div class="texto_2">
       <h3 class="titulo">
         Por que a sustentabilidade é importante?
       </h3>
@@ -100,23 +140,23 @@
         nosso impacto ambiental e economizando recursos para as próximas gerações. É um dever de todos nós garantir um
         futuro habitável para o planeta Terra.
       </p>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <div class="acoes_susten" id="acoes_susten">
-    <section class="texto_3">
+  <section class="acoes_susten" id="acoes_susten">
+    <div class="texto_3">
       <h3 class="titulo">
         O que são ações sustentáveis?
       </h3>
       <p class="texto">
         Ações sustentáveis são iniciativas que visam equilibrar as demandas socioeconômicas com a preservação do meio
         ambiente. São atividades que reduzem a poluição, o uso inadequado de recursos, a produção excessiva de lixo,
-        entre outros problemas ambientais. 
+        entre outros problemas ambientais.
       </p>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <div class="ex_acoes" id="ex_acoes">
+  <section class="ex_acoes" id="ex_acoes">
     <h3 class="titulo">
       Exemplos de ações sustentáveis
     </h3>
@@ -143,10 +183,10 @@
           manter a biodiversidade do planeta e garante a sobrevivência de espécies animais e vegetais.</p>
       </li>
     </ul>
-  </div>
+  </section>
 
-  <div class="aplicar_acoes" id="aplicar_acoes">
-    <section class="texto_4">
+  <section class="aplicar_acoes" id="aplicar_acoes">
+    <div class="texto_4">
       <h3 class="titulo">
         Como aplicar essas ações no dia a dia?
       </h3>
@@ -155,22 +195,22 @@
         água e energia, optando por produtos orgânicos e locais, compartilhando carros ou adotando um transporte
         alternativo, como caminhar ou andar de bicicleta.
       </p>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <div class="benefcios" id="benefcios">
-    <section class="texto_5">
+  <section class="benefcios" id="benefcios">
+    <div class="texto_5">
       <h1 class="titulo">
         Benefícios da Sustentabilidade
       </h1>
       <p class="texto">A sustentabilidade traz benefícios para todos: melhora a qualidade de vida, cria empregos verdes,
         incentiva a inovação e o desenvolvimento sustentável, reduz os custos de produção, preserva o meio ambiente e
         garante um futuro melhor.</p>
-    </section>
+    </div>
     <img src="img/biodiversidade.png" alt="Benefícios da sustentabilidade">
-  </div>
+  </section>
 
-  <div class="impactos" id="impactos">
+  <section class="impactos" id="impactos">
     <ul class="lista">
       <h3 class="titulo">
         Impactos positivos ao meio ambiente
@@ -194,18 +234,18 @@
           economizando recursos e criando produtos mais duráveis e sustentáveis.</p>
       </li>
     </ul>
-  </div>
+  </section>
 
-  <div class="mudar content" id="mudar">
-    <section class="texto_6">
+  <section class="mudar content" id="mudar">
+    <div class="texto_6">
       <h1 class="titulo">
         Mudando o mundo através da sustentabilidade
       </h1>
       <p class="texto">A sustentabilidade depende de nós. Ao colocar em prática as ações sustentáveis em nossas vidas
         diárias, podemos inspirar outras pessoas a seguir o nosso exemplo. Juntos, podemos mudar o mundo e garantir um
         futuro sustentável para todos.</p>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <footer class="sla"></footer>
 </body>
