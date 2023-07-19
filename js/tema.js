@@ -22,7 +22,7 @@ function mudarRoot() {
     if (modo) {
         var mudancas = {
             // claro
-            '--cor-header': '#c7c7c7',
+            // '--cor-header': '#c7c7c7',
             '--cor-principal': '#c7c7c7',
             '--cor-segundaria': '#b6b6b6',
             '--cor-titulo': '#202020',
@@ -42,7 +42,7 @@ function mudarRoot() {
         // escuro
         var mudancas = {
 
-            '--cor-header': 'rgba(25, 25, 25, 0.75)',
+            // '--cor-header': 'rgba(25, 25, 25, 0.75)',
             '--cor-principal': '#302D2C',
             '--cor-segundaria': '#464342',
             '--cor-titulo': '#ebc4b0',
