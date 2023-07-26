@@ -14,7 +14,7 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
     modo = false
     // false = claro;
     for (var i = 0; i < elementosMudar.length; i++) {
-        elementosMudaosMudar[i].classList.add('claro');
+        elementosMudar[i].classList.add('claro');
     }
 }
 
