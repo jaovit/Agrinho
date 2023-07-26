@@ -11,6 +11,7 @@
   --fonte-subtitulo: 'Roboto', sans-serif;
   --borda-menu: solid .01vw #ebc4b0;
   --cor-principal-deg: #302d2cc9;
+  --font-size-js: 1;
 
   /* por padrão escuro */
   /* --cor-header:rgba(25, 25, 25, 0.9); */
@@ -79,6 +80,10 @@ html {
   vertical-align: baseline;
 }
 
+* :not(.topicos, .configuracao){
+  transition: background-color 1s;
+}
+
 article,
 aside,
 details,
@@ -115,14 +120,14 @@ table {
   color: var(--cor-titulo);
   font-family: var(--fonte-principal);
   font-weight: 600;
-  font-size: 2.3vw;
+  font-size: calc(var(--font-size-js) * 2.3vw);
   margin-bottom: 2.5vw;
 }
 
 .subtitulo {
-  font-size: 1.6vw;
+  font-size: calc(var(--font-size-js) * 1.6vw);
   font-weight: 600;
-  margin-bottom: 1.4vw;
+  margin-bottom:   1.4vw;
   color: var(--sub-titulo);
   font-family: var(--fonte-subtitulo);
 }
@@ -130,7 +135,63 @@ table {
 .texto {
   color: var(--cor-texto);
   font-family: var(--fonte-principal);
-  font-size: 1.15vw;
-  line-height: 2.1vw;
+  font-size: calc(var(--font-size-js) * 1.15vw) ;
+  line-height: calc(var(--font-size-js) *  2.1vw);
   font-weight: 500;
 }
+
+
+/* aparecer com a rolagem */
+/* .conteudo{
+  filter: opacity(0);
+  transition: 1s ease-in-out;
+}
+
+.conteudo.scrollou{
+  filter: opacity(1);
+} */
+
+/* tablet */
+/* @media (max-width: 850px) {
+  .titulo {
+    font-size: calc(var(--font-size-js) * 3vw);
+    margin-bottom: 2.5vw;
+  }
+  
+  .subtitulo {
+    font-size: calc(var(--font-size-js) * 2.25vw);
+    margin-bottom:   1.75vw;
+  }
+  
+  .texto {
+    font-size: calc(var(--font-size-js) * 1.9vw) ;
+    line-height: calc(var(--font-size-js) * 3vw);
+  }
+  
+} */
+
+/* celular  */
+/* @media (max-width: 500px) {
+
+  .titulo {
+    font-size: calc(var(--font-size-js) * 5vw);
+  margin-bottom: 3.5vw;
+  }
+  
+  .subtitulo {
+    font-size: calc(var(--font-size-js) * 3vw);
+  margin-bottom:   2.25vw;
+  }
+  
+  .texto {
+    font-size: calc(var(--font-size-js) * 2.5vw) ;
+  line-height: 4vw;
+  }
+  
+}  */
+/* ultra wide */
+/* @media (min-width: 1440px ) and (max-height: 550px){
+    .template {
+        background-color: rgb(12, 245, 90);
+    }
+} */

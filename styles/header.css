@@ -41,6 +41,7 @@
     color: #e4b7a0;
 }
 
+
 .header_itens .texto.claro {
     font-weight: 500;
     color: rgb(22, 22, 22);
@@ -108,7 +109,7 @@ input[type="checkbox"]:checked~.botao .barras:nth-child(1) {
     width: 1.85vw;
     top: 50%;
     translate: 0 -50%;
-    transition: all .75s;
+    transition: .75s;
 }
 
 input[type="checkbox"]:checked~.botao .barras:nth-child(2) {
@@ -132,8 +133,8 @@ input[type="checkbox"]:checked~.botao .barras:nth-child(3) {
 .configuracao {
     position: fixed;
     top: 0;
-    right: -23.7vw;
-    width: 23.5vw;
+    right: 0;
+    transform: translateX(calc(100% + .2vw));
     height: 100%;
     z-index: 1;
     transition: .75s;
@@ -142,11 +143,11 @@ input[type="checkbox"]:checked~.botao .barras:nth-child(3) {
 }
 
 input[type="checkbox"]:checked~.header_itens .configuracao {
-    transform: translateX(-23.7vw)
+    transform: translateX(0)
 }
 
 .configuracao .subtitulo {
-    font-size: 1.5vw;
+    font-size: calc(var(--font-size-js) * 1.5vw);
     font-weight: 500;
     margin: 1.5vw 0 1.25vw 0;
     text-align: center;
@@ -163,8 +164,8 @@ input[type="checkbox"]:checked~.header_itens .configuracao {
 .opcoes .itens {
     border-bottom: var(--borda-menu);
     border-top: var(--borda-menu);
-    /* ou centralizar */
     width: 100%;
+    padding: 0 .8vw;
     height: 4.75vw;
     display: flex;
     align-items: center;
@@ -174,6 +175,9 @@ input[type="checkbox"]:checked~.header_itens .configuracao {
     background-image: linear-gradient(to left, #ebccbbe3 -25%, #ebccbb00 90%);
 }
 
+/* config tema */
+
+/* config font-size */
 /* tablet */
 /* @media (max-width: 850px) {
     .template {

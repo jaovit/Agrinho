@@ -1,6 +1,6 @@
 /* importancia da sustentabilidade */
 
-.impor_susten,
+.importancia,
 .mudar {
     position: relative;
     display: flex;
@@ -11,11 +11,11 @@
     border-top: var(--borda);
 }
 
-.impor_susten {
+.importancia {
     border-bottom: var(--borda);
 }
 
-.impor_susten::before,
+.importancia::before,
 .mudar::before {
     top: 0;
     left: 0;
@@ -26,8 +26,8 @@
     z-index: -1;
 }
 
-.texto_2,
-.texto_6 {
+.importancia .conteudo,
+.mudar .conteudo{
     width: 62.5vw;
 }
 

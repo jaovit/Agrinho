@@ -38,33 +38,33 @@
     z-index: -3;
 }
 
-.texto_1 {
+.template .conteudo{
     position: absolute;
     top: 9.5vw;
     left: 18.5vw;
     width: 70vw;
 }
 
-.texto_1 .titulo {
+.template .titulo {
     background-image: linear-gradient(to right, var(--cor-titulo), var(--cor-texto));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 3.85vw;
+    font-size: calc(var(--font-size-js) * 3.85vw);
     line-height: 4.5vw;
     margin-bottom: 1.5vw;
 }
 
-.texto_1 .titulo.claro {
+.template .titulo.claro {
     background-image: none;
     -webkit-text-fill-color: rgb(17, 17, 17);
 }
 
-.texto_1 .texto {
+.template .texto {
     padding-left: 1vw;
 }
 
-.texto_1 .texto.claro {
+.template .texto.claro {
     color: rgb(22, 22, 22);
 }
 
@@ -73,12 +73,11 @@
 .topicos {
     position: relative;
     padding: 1.5vw 15vw 2.5vw 15vw;
-    transition: all .3s;
 }
 
 .topicos .titulo {
     text-align: center;
-    font-size: 2vw;
+    font-size: calc(var(--font-size-js) * 2vw);
     color: var(--cor-titulo);
     margin-bottom: 1.5vw;
 }
@@ -108,7 +107,7 @@
     height: 4.5vw;
     border: solid .01vw transparent;
     border-radius: .5vw;
-    transition: .25s;
+    transition: .25s ease-in-out;
     text-decoration: none;
 }
 

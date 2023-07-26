@@ -9,8 +9,8 @@
     background-color: var(--cor-principal);
 }
 
-.texto_3,
-.texto_4 {
+.acoes_susten .conteudo,
+.aplicar_acoes .conteudo {
     flex-basis: 60vw;
     border-radius: 1vw;
     background-color: var(--cor-segundaria);
@@ -19,7 +19,7 @@
 
 /* como aplicar as ações */
 
-.texto_4 {
+.aplicar_acoes .conteudo {
     width: 65vw;
 }
 
