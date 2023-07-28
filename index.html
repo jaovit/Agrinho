@@ -64,14 +64,29 @@
           </h4>
           <ul class="opcoes">
             <li class="itens">
-                <label  class="texto"> tema: 
-                  <input type="checkbox"  id="input_tema" onclick="mudarRoot()">
-                </label>
+              <label class="texto"> tema:
+                <input type="checkbox" id="input_tema" onclick="mudarRoot()">
+              </label>
             </li>
             <li class="itens">
-              <label for="progress_font_size" class="texto"> tamanho da fonte: <span class="fonte_tamanho"> &nbsp;
+              <label for="progress_font_size" class="texto"> tamanho da fonte: <span class="fonte_tamanho num"> &nbsp;
                   1</span> </label>
-              <input type="range" min="75" max="125" value="100" id="progress_font_size">
+              <input type="range" min="50" max="150" value="100" id="progress_font_size" class="porgress">
+            </li>
+            <li class="itens">
+              <label for="progress_img" class="texto"> Tamanho da imagem: <span class="img_tamanho num"> &nbsp;
+                  1</span> </label>
+              <input type="range" min="50" max="150" value="100" id="progress_img" class="porgress">
+            </li>
+            <li class="itens">
+              <label for="progress_geral" class="texto"> Geral: <span class="geral_tamanho num"> &nbsp;
+                  1</span> </label>
+              <input type="range" min="50" max="150" value="100" id="progress_geral" class="porgress">
+            </li>
+            <li class="itens">
+              <label class="texto">
+                <input type="button" id="input_reset" value="Resetar" onclick="resetConf()">
+              </label>
             </li>
           </ul>
         </nav>
@@ -99,7 +114,7 @@
     </div>
   </section>
 
-  <section class="topicos">
+  <section class="topicos tema">
     <h3 class="titulo" id="topic_t"> Topícos </h3>
     <ul class="topicos_lista">
       <li class="itens">
@@ -221,13 +236,16 @@
 
   <section class="impactos" id="impactos">
     <ul class="lista">
-      <h3 class="titulo">
-        Impactos positivos ao meio ambiente
-      </h3>
+      <li class="titulo">
+        <h3>
+          Impactos positivos ao meio ambiente
+        </h3>
+      </li>
       <li class="itens">
         <img src="img/biodiversidade.png" alt="" class="img_1">
         <h4 class="subtitulo">Biodiversidade</h4>
-        <p class="texto">A sustentabilidade ajuda a manter a biodiversidade das espécies animais e vegetais do planeta,
+        <p class="texto">A sustentabilidade ajuda a manter a biodiversidade das espécies animais e vegetais do
+          planeta,
           mantendo o equilíbrio ecológico e evitando a extinção de espécies.</p>
       </li>
       <li class="itens">
