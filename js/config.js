@@ -130,3 +130,5 @@ function resetConf(){
 
     mudarRoot()
 }
+
+console.log("sla")
