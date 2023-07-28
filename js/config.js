@@ -14,7 +14,7 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
     modo = false
     // false = claro;
     for (var i = 0; i < elementosMudar.length; i++) {
-        elementosMudar[i].classList.add('claro');
+        elementosMudaosMudar[i].classList.add('claro');
     }
 }
 
@@ -67,12 +67,66 @@ function mudarRoot() {
 }
 
 // tamanho da fonte
-var barra = document.querySelector("#progress_font_size")
+var barraFont = document.querySelector("#progress_font_size")
 
-barra.addEventListener("input", fonte);
+barraFont.addEventListener("input", fonte);
 
 function fonte(){
-    document.querySelector(".fonte_tamanho").innerHTML = barra.value / 100
-    root.style.setProperty('--font-size-js', barra.value / 100);
+    document.querySelector(".fonte_tamanho").innerHTML = barraFont.value / 100
+    root.style.setProperty('--font-size-js', barraFont.value / 100);
 }
 
+// tamanho img
+var barraImg = document.querySelector("#progress_img")
+
+barraImg.addEventListener("input", img);
+
+function img(){
+    document.querySelector(".img_tamanho").innerHTML = barraImg.value / 100
+    root.style.setProperty('--tamanho-img', barraImg.value / 100);
+}
+
+// geral
+var barraGeral = document.querySelector("#progress_geral")
+
+barraGeral.addEventListener("input", geral);
+
+function geral(){
+    document.querySelector(".geral_tamanho").innerHTML = barraGeral.value / 100
+
+    document.querySelector(".fonte_tamanho").innerHTML = barraGeral.value / 100
+    root.style.setProperty('--font-size-js', barraGeral.value / 100);
+    barraFont.value = barraGeral.value; 
+
+    document.querySelector(".img_tamanho").innerHTML = barraGeral.value / 100
+    root.style.setProperty('--tamanho-img', barraGeral.value / 100);
+    barraImg.value = barraGeral.value 
+
+}
+
+// resetar
+
+function resetConf(){
+    barraFont.value = 100;
+    barraImg.value = 100;
+    barraGeral.value = 100;
+
+    geral()
+    
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        modo = false;
+        // true = escuro;
+        for (var i = 0; i < elementosMudar.length; i++) {
+            elementosMudar[i].classList.remove('claro');
+        }
+    
+    } else {
+        modo = true
+        // false = claro;
+        for (var i = 0; i < elementosMudar.length; i++) {
+            elementosMudaosMudar[i].classList.add('claro');
+        }
+    }
+
+    mudarRoot()
+}
