@@ -37,9 +37,10 @@
     left: 50%;
     transform: translateX(-50%);
     display: inline-grid;
-    grid-template-rows: 5vw 1fr;
+    grid-template-rows: 2vw 1fr;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1.5vw;
+    grid-row-gap: 2vw;
     padding: 1.75vw 3vw;
     background-color: var(--cor-segundaria);
     border-radius: 1vw;

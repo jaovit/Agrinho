@@ -13,10 +13,7 @@
   --cor-principal-deg: #302d2cc9;
   --font-size-js: 1;
   --tamanho-img: 1;
-  /* --geral: 1; */
 
-  /* por padrão escuro */
-  /* --cor-header:rgba(25, 25, 25, 0.9); */
   --cor-principal: #302D2C;
   --cor-segundaria: #464342;
   --cor-titulo: #e4b7a0;
@@ -38,7 +35,7 @@
     --cor-texto: #2e2e2e;
     --borda: solid .01vw rgb(70, 70, 70);
     --background-card: url(../img/oatmeal-01_4e7de307.jpg);
-    --filtro: brightness(50%);
+    --filtro: brightness(75%);
   }
 }
 
@@ -137,21 +134,21 @@ table {
 .texto {
   color: var(--cor-texto);
   font-family: var(--fonte-principal);
-  font-size: calc(var(--font-size-js) * 1.15vw) ;
-  line-height: calc(var(--font-size-js) *  2.1vw);
+  font-size: calc(var(--font-size-js) * 1.05vw) ;
+  line-height: calc(var(--font-size-js) *  2vw);
   font-weight: 500;
 }
 
 
 /* aparecer com a rolagem */
-/* .conteudo{
+.scrollTexto{
   filter: opacity(0);
   transition: 1s ease-in-out;
 }
 
-.conteudo.scrollou{
+.scrollTexto.scrollou{
   filter: opacity(1);
-} */
+}
 
 /* tablet */
 /* @media (max-width: 850px) {
@@ -182,17 +179,7 @@ table {
   
   .subtitulo {
     font-size: calc(var(--font-size-js) * 3vw);
-  margin-bottom:   2.25vw;
-  }
-  
-  .texto {
-    font-size: calc(var(--font-size-js) * 2.5vw) ;
-  line-height: 4vw;
-  }
-  
-}  */
-
-@media (min-width: 1200px) {
+  margin-bottom:   2.25vw;@media (min-width: 1200px) {
 
   .titulo {
     font-size: calc(var(--font-size-js) * 2vw);
@@ -210,7 +197,34 @@ table {
   background: red;
   }
   
-} 
+  }
+  
+  .texto {
+    font-size: calc(var(--font-size-js) * 2.5vw) ;
+  line-height: 4vw;
+  }
+  
+}  */
+
+/* @media (min-width: 1200px) {
+
+  .titulo {
+    font-size: calc(var(--font-size-js) * 2vw);
+  margin-bottom: 2vw;
+  }
+  
+  .subtitulo {
+    font-size: calc(var(--font-size-js) * 1.35vw);
+  margin-bottom:   1.5vw;
+  }
+  
+  .texto {
+    font-size: calc(var(--font-size-js) * .9vw) ;
+  line-height: 1.5vw;
+  background: red;
+  }
+ } */
+
 /* ultra wide */
  /* @media (min-width: 1440px ) and (max-height: 550px){
     .template {
