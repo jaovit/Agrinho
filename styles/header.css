@@ -157,16 +157,13 @@ input[type="checkbox"]:checked~.header_itens .configuracao {
 .opcoes {
     margin: auto;
     width: 100%;
-    display: grid;
-    grid-template-rows: auto;
 }
 
 .opcoes .itens {
     border-bottom: var(--borda-menu);
     border-top: var(--borda-menu);
     width: 100%;
-    padding: 0 .8vw;
-    height: 4.75vw;
+    padding: 1.2vw .8vw;
     display: flex;
     align-items: center;
 }
@@ -175,7 +172,13 @@ input[type="checkbox"]:checked~.header_itens .configuracao {
     background-image: linear-gradient(to left, #ebccbbe3 -25%, #ebccbb00 90%);
 }
 
+/* .num {
+}
+
+.progress{
+} */
 /* config tema */
+
 
 /* config font-size */
 /* tablet */

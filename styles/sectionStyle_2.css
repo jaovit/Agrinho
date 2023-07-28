@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5vw 0 7.5vw 0;
+    padding: 4vw;
     border-bottom: var(--borda);
     border-top: var(--borda);
 }

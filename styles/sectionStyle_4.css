@@ -2,7 +2,7 @@
 
 .ex_acoes {
     position: relative;
-    padding: 3vw;
+    padding: 2vw;
     text-align: center;
     background-color: var(--cor-segundaria);
 }
@@ -25,18 +25,18 @@
     position: relative;
     display: flex;
     align-items: center;
-    padding: 3.5vw;
+    justify-content: center;
+    padding: 2vw 0;
     background-color: var(--cor-segundaria);
 }
 
 .benefcios .conteudo{
-    margin-left: 12vw;
     width: 35vw;
 }
 
 .benefcios img {
     margin-left: 5vw;
-    width: 25vw;
+    width: calc(var(--tamanho-img) * 22.5vw);
 }
 
 /* tablet */

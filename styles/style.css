@@ -12,6 +12,8 @@
   --borda-menu: solid .01vw #ebc4b0;
   --cor-principal-deg: #302d2cc9;
   --font-size-js: 1;
+  --tamanho-img: 1;
+  /* --geral: 1; */
 
   /* por padrão escuro */
   /* --cor-header:rgba(25, 25, 25, 0.9); */
@@ -46,9 +48,9 @@ html {
   background-color: var(--cor-principal);
 }
 
-/* body {
+body {
   overflow-x: hidden;
-} */
+}
 
 ::-webkit-scrollbar {
   width: .575vw;
@@ -120,14 +122,14 @@ table {
   color: var(--cor-titulo);
   font-family: var(--fonte-principal);
   font-weight: 600;
-  font-size: calc(var(--font-size-js) * 2.3vw);
-  margin-bottom: 2.5vw;
+  font-size: calc(var(--font-size-js) * 2.25vw);
+  margin-bottom: 1.65vw;
 }
 
 .subtitulo {
-  font-size: calc(var(--font-size-js) * 1.6vw);
+  font-size: calc(var(--font-size-js) * 1.5vw);
   font-weight: 600;
-  margin-bottom:   1.4vw;
+  margin-bottom:   1vw;
   color: var(--sub-titulo);
   font-family: var(--fonte-subtitulo);
 }

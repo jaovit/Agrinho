@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3vw;
+    padding: 1.75vw;
     background-color: var(--cor-principal);
 }
 
@@ -14,7 +14,7 @@
     flex-basis: 60vw;
     border-radius: 1vw;
     background-color: var(--cor-segundaria);
-    padding: 4vw;
+    padding: 2.5vw;
 }
 
 /* como aplicar as ações */
@@ -27,34 +27,39 @@
 
 .impactos {
     position: relative;
-    padding: 3.5vw 15vw;
+    padding: 2.25vw 10vw;
     background-color: var(--cor-principal);
 
 }
 
 .impactos .lista {
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border-radius: 1vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-grid;
+    grid-template-rows: 5vw 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.5vw;
+    padding: 1.75vw 3vw;
     background-color: var(--cor-segundaria);
+    border-radius: 1vw;
     text-align: center;
-    padding: 1.5vw 3vw;
+
 }
 
 .impactos .titulo {
-    grid-column: 1 / -1;
-    margin-top: 1vw;
+    grid-column-start: 1 ;
+    grid-column-end: 4;
 }
 
 .impactos .itens {
-    margin: .5vw auto;
-    width: 20vw;
+    grid-row: 2;
+    padding: 0 1vw;
 }
 
 .impactos img {
     padding-bottom: 1vw;
-    width: 17vw;
+    width: calc(var(--tamanho-img) * 17vw);
     border-radius: 1vw;
 }
 
