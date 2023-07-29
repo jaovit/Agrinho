@@ -70,7 +70,7 @@
 
 .topicos {
     position: relative;
-    padding: 1.5vw 15vw 2.5vw 15vw;
+    padding: 1.5vw 0 2.5vw 0;
     background-color: var(--cor-principal);
     transition: none;
 }
@@ -90,6 +90,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
 }
 
 .topicos_lista .itens {
@@ -136,34 +137,40 @@
 @media (max-width: 500px) { 
 
     .template {
-        padding: 10vw 0 12vw 0;
+        padding: 12vw 0 10vw 0;
     }
     
     .template .conteudo{
-        margin-left: 13vw;
-        width: 77.5vw;
+        margin-left: 7.5vw;
+        width: 85vw;
     }
     
     .template .titulo {
-        font-size: calc(var(--font-size-js) * 4vw);
+        font-size: calc(var(--font-size-js) * 4.5vw);
         line-height: calc(var(--font-size-js) * 3.75vw);
         margin-bottom: 1.75vw;
     }
     
     .template .texto {
         margin-left: 2vw;
+        font-size: calc(var(--font-size-js) * 2.75vw);
+        line-height: calc(var(--font-size-js) * 3.25vw);
     }
 
     .topicos {
-        padding: 1.5vw 5vw 2.5vw 5vw;
+        padding: 2vw 0 3.5vw 0;
     }
     
+    .topicos_lista{
+        justify-items: center;
+    }
+
     .topicos .titulo {
         font-size: calc(var(--font-size-js) * 3.25vw);
     }
     
     .topicos_lista .itens {
-        margin: .5vw;
+        margin: .25vw;
     }
     
     .topicos_lista a:before {
@@ -173,13 +180,13 @@
     }
     
     .topicos_lista a {
-        width: 28vw;
-        height: calc(var(--font-size-js) * 5.15vw);
+        width: 29vw;
+        height: calc(var(--font-size-js) * 7vw);
     }
     
     .topicos_lista .texto {
-        line-height: calc(var(--font-size-js) * 2vw);
-        font-size: calc(var(--font-size-js) * 2.5vw);
+        line-height: calc(var(--font-size-js) * 3vw);
+        font-size: calc(var(--font-size-js) * 2.35vw);
     }
 } 
 

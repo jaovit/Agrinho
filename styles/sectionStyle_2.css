@@ -27,13 +27,15 @@
 }
 
 .importancia .conteudo,
-.mudar .conteudo{
+.mudar .conteudo {
     width: 62.5vw;
 }
 
-.importancia .texto, .mudar .texto{
+.importancia .texto,
+.mudar .texto {
     margin-left: 1vw;
 }
+
 /* mudar */
 
 .mudar::before {
@@ -66,20 +68,22 @@
 
 /* celular  */
 @media (max-width: 500px) {
+
     .importancia,
-.mudar {
-    padding: 3vw 0;
-}
+    .mudar {
+        padding: 4vw 0;
+    }
 
-.importancia .conteudo,
-.mudar .conteudo{
-    width: 77.5vw;
-}
+    .importancia .conteudo,
+    .mudar .conteudo {
+        width: 85vw;
+    }
 
-.importancia .texto, .mudar .texto{
-    margin-left: 1.75vw;
+    .importancia .texto,
+    .mudar .texto {
+        margin-left: 1.75vw;
+    }
 }
-}   
 
 /* ultra wide */
 /* @media (min-width: 1440px ) and (max-height: 550px){
