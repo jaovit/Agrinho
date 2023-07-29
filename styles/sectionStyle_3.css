@@ -91,14 +91,13 @@
 
     .impactos {
         position: relative;
-        padding: 2.25vw 10vw;
+        padding: 2.25vw;
         background-color: var(--cor-principal);
-    
     }
     
     .impactos .lista {
         grid-row-gap: calc(var(--font-size-js) * 5vw);
-        padding: 1.75vw 3vw;
+        padding: 1.75vw;
     }
     
     .impactos .itens {

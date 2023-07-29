@@ -50,7 +50,6 @@ body {
 }
 
 ::-webkit-scrollbar {
-  height: .575vw;
   width: .575vw;
   position: fixed;
 }
@@ -187,14 +186,6 @@ table {
   .texto {
     font-size: calc(var(--font-size-js) * 2.25vw) ;
     line-height: 3.5vw;
-  }
-  
-  ::-webkit-scrollbar {
-    width: 1.35vw;
-    height: 1.35vw;
-  }
-  ::-webkit-scrollbar-thumb {
-    border-radius: 1vw;
   }
 }  
 
