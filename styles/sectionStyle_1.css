@@ -145,7 +145,7 @@
     }
     
     .template .titulo {
-        font-size: calc(var(--font-size-js) * 3.85vw);
+        font-size: calc(var(--font-size-js) * 4vw);
         line-height: calc(var(--font-size-js) * 3.75vw);
         margin-bottom: 1.75vw;
     }
@@ -159,7 +159,7 @@
     }
     
     .topicos .titulo {
-        font-size: calc(var(--font-size-js) * 2.75vw);
+        font-size: calc(var(--font-size-js) * 3.25vw);
     }
     
     .topicos_lista .itens {
@@ -179,7 +179,7 @@
     
     .topicos_lista .texto {
         line-height: calc(var(--font-size-js) * 2vw);
-        font-size: calc(var(--font-size-js) * 1.75vw);
+        font-size: calc(var(--font-size-js) * 2.5vw);
     }
 } 
 
