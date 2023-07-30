@@ -64,7 +64,7 @@
 .botao {
     position: absolute;
     right: 1.5vw;
-    z-index: 2;
+    z-index: 3;
     width: 3.5vw;
     height: 3.5vw;
     transform: scaleX(-1);
@@ -74,7 +74,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 3;
+    z-index: 4;
 }
 
 #menu_input {
@@ -99,7 +99,7 @@
     top: .875vw;
 }
 
-input[type="checkbox"]:checked~ .header .barras:nth-child(1) {
+input[type="checkbox"]:checked~ .botao .barras:nth-child(1) {
     transform: rotate(45deg) translate(.4vw, .65vw);
     background-color: #c9c2c0;
     width: 2.35vw;
@@ -143,7 +143,7 @@ input[type="checkbox"]:checked~.botao .barras:nth-child(3) {
     width: 24vw;
 }
 
-input[type="checkbox"]:checked~ .configuracao {
+input[type="checkbox"]:checked~ .header_itens  .configuracao {
     transform: translateX(0)
 }
 
@@ -244,12 +244,12 @@ input[type="checkbox"]:checked~ .configuracao {
     .header {
         padding: 0;
         height: 14.5vw;
-        background-color: #191919;
-        z-index: 2;
     }
     
-
-    .header.scrollou{
+    .header::before{
+        top: 0;
+        left: 0;
+        z-index: 3;
         background-color: #191919;
     }
     
@@ -259,12 +259,12 @@ input[type="checkbox"]:checked~ .configuracao {
     
     .botao {
         right: 4vw;
-        width: 7vw;
-        height: 6.5vw;
+        width: 7.25vw;
+        height: 6.75vw;
     }
     
     .botao .barras {
-        height: .5vw;
+        height: .4vw;
     }
     
     .barras:nth-child(1) {
@@ -272,7 +272,7 @@ input[type="checkbox"]:checked~ .configuracao {
     }
     
     input[type="checkbox"]:checked~.botao .barras:nth-child(1) {
-        transform: rotate(45deg) translate(.4vw, .65vw);
+        transform: rotate(45deg) translate(1.19vw, 2.2vw);
         width: 7vw;
     }
     
@@ -285,7 +285,7 @@ input[type="checkbox"]:checked~ .configuracao {
     }
     
     input[type="checkbox"]:checked~.botao .barras:nth-child(3) {
-        transform: rotate(-45deg) translate(.4vw, -.65vw);
+        transform: rotate(-45deg) translate(1.19vw, -2.2vw);
         width: 7vw;
     }
     
@@ -300,13 +300,13 @@ input[type="checkbox"]:checked~ .configuracao {
         width: 100%;
     }
     
-    input[type="checkbox"]:checked~ .configuracao {
+    input[type="checkbox"]:checked~ .header_itens .configuracao {
         transform: translateY(-1%)
     }
     
     .configuracao .subtitulo {
         font-size: calc(var(--font-size-js) * 3.75vw);
-        margin: 0 0 2.5vw 0;
+        margin:  0 0 2.5vw 0;
     }
     
     .opcoes .itens {

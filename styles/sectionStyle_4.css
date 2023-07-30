@@ -67,10 +67,16 @@
     }
     
     .ex_acoes .lista {
-        grid-row-gap: 3.5vw;
+        grid-row-gap: 5vw;
         margin-top: 3vw;
     }
 
+    .ex_acoes .itens.txt_125{
+        margin-top: 5vw;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: auto;
+    }
 } 
 
     /* ultra wide */

@@ -179,21 +179,21 @@ table {
   }
 
   .titulo {
-    font-size: calc(var(--font-size-js) * 3.75vw);
-    margin-bottom: 1.75vw;
+    font-size: calc(var(--font-size-js) * 4.15vw);
+    margin-bottom: calc(var(--font-size-js) * 1.5vw);
     font-weight: 400;
 
   }
 
   .subtitulo {
-    font-size: calc(var(--font-size-js) * 3.5vw);
-    margin-bottom: 1vw;
+    font-size: calc(var(--font-size-js) * 3.75vw);
+    margin-bottom: calc(var(--font-size-js) * 1.25vw);
     font-weight: 400;
   }
 
   .texto {
-    font-size: calc(var(--font-size-js) * 3.25vw);
-    line-height: 4.15vw;
+    font-size: calc(var(--font-size-js) * 3.5vw);
+    line-height: calc(var(--font-size-js) * 4.25vw);
     font-weight: 400;
   }
 
