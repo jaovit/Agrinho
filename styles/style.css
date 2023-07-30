@@ -175,7 +175,7 @@ table {
 @media (max-width: 500px) {
 
   html {
-    scroll-padding-top: 10vw;
+    scroll-padding-top: 15vw;
   }
 
   .titulo {

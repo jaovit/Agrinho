@@ -314,6 +314,10 @@ input[type="checkbox"]:checked~ .header_itens  .configuracao {
         padding: 3vw 10vw;
     }
     
+    .opcoes .itens:hover {
+        background-image: none;
+    }
+
     .num {
         right: 30vw;
     }

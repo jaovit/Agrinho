@@ -137,7 +137,7 @@
 @media (max-width: 500px) { 
 
     .template {
-        padding: 20vw 0 10vw 0;
+        padding: 22.5vw 0 15vw 0;
     }
     
     .template::before {
@@ -189,8 +189,14 @@
     }
     
     .topicos_lista a {
-        width: 37.5vw;
+        width:  37.5vw;
         height: calc(var(--font-size-js) * 8.5vw);
+    }
+
+    .topicos_lista a:hover{
+        border: none;
+        background-color: transparent;
+        transform: scale(1);
     }
     
     .topicos_lista .texto {
