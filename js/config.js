@@ -123,6 +123,22 @@ function geral(){
     root.style.setProperty('--tamanho-img', barraGeral.value / 100);
     barraImg.value = barraGeral.value 
 
+    if (barraFont.value > 125){
+        for (var i = 0; i < txt_125.length; i++) {
+            txt_125[i].classList.add('txt_125');
+        }
+    } else{
+        for (var i = 0; i < txt_125.length; i++) {
+            txt_125[i].classList.remove('txt_125');
+        }
+    }
+
+    if (barraFont.value > 120){
+            txt_120.classList.add('txt_120');
+    } else{
+            txt_120.classList.remove('txt_120');
+    }
+
 }
 
 // resetar
@@ -131,6 +147,22 @@ function resetConf(){
     barraFont.value = 100;
     barraImg.value = 100;
     barraGeral.value = 100;
+
+    if (barraFont.value > 125){
+        for (var i = 0; i < txt_125.length; i++) {
+            txt_125[i].classList.add('txt_125');
+        }
+    } else{
+        for (var i = 0; i < txt_125.length; i++) {
+            txt_125[i].classList.remove('txt_125');
+        }
+    }
+
+    if (barraFont.value > 120){
+            txt_120.classList.add('txt_120');
+    } else{
+            txt_120.classList.remove('txt_120');
+    }
 
     geral()
     
