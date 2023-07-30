@@ -35,7 +35,7 @@ function mudarRoot() {
             '--cor-texto': '#2e2e2e',
             '--borda': 'solid .01vw rgb(70, 70, 70)',
             '--background-card': 'url(../img/oatmeal-01_4e7de307.jpg)',
-            '--filtro': 'brightness(50%)',
+            '--filtro': 'brightness(75%)',
             // '--font-size-js': '1.5'
         }
 
@@ -49,8 +49,8 @@ function mudarRoot() {
         var mudancas = {
 
             // '--cor-header': 'rgba(25, 25, 25, 0.75)',
-            '--cor-principal': '#302D2C',
-            '--cor-segundaria': '#464342',
+            '--cor-principal': '#292626',
+            '--cor-segundaria': '#413d3c',
             '--cor-titulo': '#ebc4b0',
             '--sub-titulo': '#EBCCBB',
             '--cor-texto': '#c9c2c0',
