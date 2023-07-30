@@ -2,6 +2,9 @@
 var modo = true;
 var root = document.documentElement;
 var elementosMudar = document.querySelectorAll('.tema');
+var titulo =  document.querySelectorAll(".titulo")
+var subtitulo =  document.querySelectorAll(".subtitulo")
+var texto = document.querySelectorAll(".texto")
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     modo = true;
