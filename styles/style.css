@@ -179,20 +179,20 @@ table {
   }
 
   .titulo {
-    font-size: calc(var(--font-size-js) * 4.15vw);
+    font-size: calc(var(--font-size-js) * 4.35vw);
     margin-bottom: calc(var(--font-size-js) * 1.5vw);
     font-weight: 400;
 
   }
 
   .subtitulo {
-    font-size: calc(var(--font-size-js) * 3.75vw);
+    font-size: calc(var(--font-size-js) * 4vw);
     margin-bottom: calc(var(--font-size-js) * 1.25vw);
     font-weight: 400;
   }
 
   .texto {
-    font-size: calc(var(--font-size-js) * 3.5vw);
+    font-size: calc(var(--font-size-js) * 3.75vw);
     line-height: calc(var(--font-size-js) * 4.25vw);
     font-weight: 400;
   }

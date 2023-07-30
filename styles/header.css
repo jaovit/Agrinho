@@ -264,7 +264,8 @@ input[type="checkbox"]:checked~ .header_itens  .configuracao {
     }
     
     .botao .barras {
-        height: .4vw;
+    background-color: #c9c2c0;
+    height: .4vw;
     }
     
     .barras:nth-child(1) {
