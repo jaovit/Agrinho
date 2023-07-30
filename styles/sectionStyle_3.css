@@ -80,8 +80,8 @@
 
     .acoes_susten .conteudo,
     .aplicar_acoes .conteudo {
-        flex-basis: 87vw;
-        padding: 3vw;
+        flex-basis: 90vw;
+        padding: 2.5vw;
     }
 
     .acoes_susten .texto,

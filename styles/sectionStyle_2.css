@@ -71,17 +71,17 @@
 
     .importancia,
     .mudar {
-        padding: 4vw 0;
+        padding: 5vw 0;
     }
 
     .importancia .conteudo,
     .mudar .conteudo {
-        width: 85vw;
+        width: 90vw;
     }
 
     .importancia .texto,
     .mudar .texto {
-        margin-left: 1.75vw;
+        margin-left: 2vw;
     }
 }
 

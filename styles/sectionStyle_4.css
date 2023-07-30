@@ -53,13 +53,17 @@
         width: 60vw;
     }
     
+    .benefcios .texto{
+        margin-left: 2vw;
+    }
+
     .benefcios img {
         margin-left: 4vw;
         width: calc(var(--tamanho-img) * 25vw);
     }
 
     .ex_acoes {
-        padding:  2.5vw 7.5vw;
+        padding:  2.5vw 5vw;
     }
     
     .ex_acoes .lista {
