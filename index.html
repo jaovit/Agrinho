@@ -25,8 +25,6 @@
 <body>
 
   <header class="header scroll_header">
-    <input type="checkbox" id="menu_input" checked>
-
     <!-- <div class="logo">
       <img src="" alt="">
     </div> -->
@@ -58,41 +56,6 @@
           <p class="texto tema scroll_header">Entrar</p>
         </a>
       </li>
-
-      <li class="itens">
-        <nav class="configuracao">
-          <h4 class="subtitulo">
-            Configurações
-          </h4>
-          <ul class="opcoes">
-            <li class="itens">
-              <label class="texto tema"> Tema:
-                <input type="checkbox" id="input_tema" onclick="mudarRoot()">
-              </label>
-            </li>
-            <li class="itens">
-              <label for="progress_font_size" class="texto tema"> Tamanho da fonte: <span class="fonte_tamanho num"> &nbsp;
-                  1</span> </label>
-              <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
-            </li>
-            <li class="itens">
-              <label for="progress_img" class="texto tema"> Tamanho da imagem: <span class="img_tamanho num"> &nbsp;
-                  1</span> </label>
-              <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
-            </li>
-            <li class="itens">
-              <label for="progress_geral" class="texto tema"> Geral: <span class="geral_tamanho num"> &nbsp;
-                  1</span> </label>
-              <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
-            </li>
-            <li class="itens">
-              <label class="texto">
-                <input type="button" id="input_reset" class="bnt_reset" value="Resetar" onclick="resetConf()">
-              </label>
-            </li>
-          </ul>
-        </nav>
-      </li>
     </ul>
 
     <!-- ou iconi de configuração -->
@@ -104,6 +67,43 @@
     </div>
 
   </header>
+
+  <div class="div_confg">
+  <input type="checkbox" id="menu_input">
+
+  <nav class="configuracao">
+    <h4 class="subtitulo">
+      Configurações
+    </h4>
+    <ul class="opcoes">
+      <li class="itens">
+        <label class="texto tema"> Tema:
+          <input type="checkbox" id="input_tema" onclick="mudarRoot()">
+        </label>
+      </li>
+      <li class="itens">
+        <label for="progress_font_size" class="texto tema"> Tamanho da fonte: <span class="fonte_tamanho num"> &nbsp;
+            1</span> </label>
+        <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
+      </li>
+      <li class="itens">
+        <label for="progress_img" class="texto tema"> Tamanho da imagem: <span class="img_tamanho num"> &nbsp;
+            1</span> </label>
+        <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
+      </li>
+      <li class="itens">
+        <label for="progress_geral" class="texto tema"> Geral: <span class="geral_tamanho num"> &nbsp;
+            1</span> </label>
+        <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
+      </li>
+      <li class="itens">
+        <label class="texto">
+          <input type="button" id="input_reset" class="bnt_reset" value="Resetar" onclick="resetConf()">
+        </label>
+      </li>
+    </ul>
+  </nav>
+</div>
 
   <section class="template content tema">
     <div class="conteudo">
