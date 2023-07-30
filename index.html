@@ -24,7 +24,8 @@
 
 <body>
 
-  <header class="header scroll_header">
+  <header class="header scroll_header content">
+    <input type="checkbox" id="menu_input">
     <!-- <div class="logo">
       <img src="" alt="">
     </div> -->
@@ -56,6 +57,42 @@
           <p class="texto tema scroll_header">Entrar</p>
         </a>
       </li>
+
+      <li class="itens">
+        <nav class="configuracao">
+          <h4 class="subtitulo">
+            Configurações
+          </h4>
+          <ul class="opcoes">
+            <li class="itens">
+              <label class="texto tema"> Tema:
+                <input type="checkbox" id="input_tema" onclick="mudarRoot()">
+              </label>
+            </li>
+            <li class="itens">
+              <label for="progress_font_size" class="texto tema"> Tamanho da fonte: <span class="fonte_tamanho num">
+                  &nbsp;
+                  1</span> </label>
+              <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
+            </li>
+            <li class="itens">
+              <label for="progress_img" class="texto tema"> Tamanho da imagem: <span class="img_tamanho num"> &nbsp;
+                  1</span> </label>
+              <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
+            </li>
+            <li class="itens">
+              <label for="progress_geral" class="texto tema"> Geral: <span class="geral_tamanho num"> &nbsp;
+                  1</span> </label>
+              <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
+            </li>
+            <li class="itens">
+              <label class="texto">
+                <input type="button" id="input_reset" class="bnt_reset" value="Resetar" onclick="resetConf()">
+              </label>
+            </li>
+          </ul>
+        </nav>
+      </li>
     </ul>
 
     <!-- ou iconi de configuração -->
@@ -68,46 +105,9 @@
 
   </header>
 
-  <div class="div_confg">
-  <input type="checkbox" id="menu_input">
-
-  <nav class="configuracao">
-    <h4 class="subtitulo">
-      Configurações
-    </h4>
-    <ul class="opcoes">
-      <li class="itens">
-        <label class="texto tema"> Tema:
-          <input type="checkbox" id="input_tema" onclick="mudarRoot()">
-        </label>
-      </li>
-      <li class="itens">
-        <label for="progress_font_size" class="texto tema"> Tamanho da fonte: <span class="fonte_tamanho num"> &nbsp;
-            1</span> </label>
-        <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
-      </li>
-      <li class="itens">
-        <label for="progress_img" class="texto tema"> Tamanho da imagem: <span class="img_tamanho num"> &nbsp;
-            1</span> </label>
-        <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
-      </li>
-      <li class="itens">
-        <label for="progress_geral" class="texto tema"> Geral: <span class="geral_tamanho num"> &nbsp;
-            1</span> </label>
-        <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
-      </li>
-      <li class="itens">
-        <label class="texto">
-          <input type="button" id="input_reset" class="bnt_reset" value="Resetar" onclick="resetConf()">
-        </label>
-      </li>
-    </ul>
-  </nav>
-</div>
-
   <section class="template content tema">
     <div class="conteudo">
-      <h1 class="titulo tema">
+      <h1 class="titulo tema titulo_120">
         Sustentabilidade: Ações que mudam o mundo
       </h1>
       <p class="texto tema">Mais do que uma palavra da moda, a sustentabilidade é um objetivo a ser alcançado. Juntos,
@@ -160,12 +160,12 @@
     <div class="conteudo">
       <h3 class="titulo tema">
         Por que a sustentabilidade é importante?
-      </h3> 
+      </h3>
       <p class="texto tema">
         A sustentabilidade está ligada à nossa sobrevivência no planeta. Quando somos sustentáveis, estamos reduzindo
         nosso impacto ambiental e economizando recursos para as próximas gerações. É um dever de todos nós garantir um
         futuro habitável para o planeta Terra.
-      </p> 
+      </p>
     </div>
   </section>
 
@@ -184,32 +184,36 @@
 
   <section class="ex_acoes scrollTexto" id="ex_acoes">
     <div class="conteudo">
-    <h3 class="titulo tema">
-      Exemplos de ações sustentáveis
-    </h3>
-    <ul class="lista">
-      <li class="itens">
-        <h4 class="subtitulo tema">Energias Renováveis</h4>
-        <p class="texto">O uso de fontes renováveis de energia, como a solar, eólica, hidrelétrica ou geotérmica, é uma
-          ação sustentável que ajuda a reduzir a poluição e o consumo de combustíveis fósseis.</p>
-      </li>
-      <li class="itens">
-        <h4 class="subtitulo tema">Transporte Sustentável</h4>
-        <p class="texto">Pedalar, caminhar ou compartilhar carros são opções que reduzem a emissão de gases poluentes e
-          incentivam o uso de transportes sustentáveis.</p>
-      </li>
-      <li class="itens">
-        <h4 class="subtitulo tema">Consumo Responsável</h4>
-        <p class="texto tema">O consumo consciente significa reduzir o desperdício, optar por produtos orgânicos, locais ou
-          sustentáveis e reutilizar ou reciclar materiais. Assim, reduzimos nosso impacto ambiental e incentivamos uma
-          produção mais sustentável.</p>
-      </li>
-      <li class="itens">
-        <h4 class="subtitulo tema">Preservação de Áreas Naturais</h4>
-        <p class="texto tema">Proteger as áreas naturais, como florestas, praias e rios, é uma ação sustentável que ajuda a
-          manter a biodiversidade do planeta e garante a sobrevivência de espécies animais e vegetais.</p>
-      </li>
-    </ul>
+      <h3 class="titulo tema">
+        Exemplos de ações sustentáveis
+      </h3>
+      <ul class="lista">
+        <li class="itens item_lista">
+          <h4 class="subtitulo tema">Energias Renováveis</h4>
+          <p class="texto">O uso de fontes renováveis de energia, como a solar, eólica, hidrelétrica ou geotérmica, é
+            uma
+            ação sustentável que ajuda a reduzir a poluição e o consumo de combustíveis fósseis.</p>
+        </li>
+        <li class="itens item_lista">
+          <h4 class="subtitulo tema">Transporte Sustentável</h4>
+          <p class="texto">Pedalar, caminhar ou compartilhar carros são opções que reduzem a emissão de gases poluentes
+            e
+            incentivam o uso de transportes sustentáveis.</p>
+        </li>
+        <li class="itens item_lista">
+          <h4 class="subtitulo tema">Consumo Responsável</h4>
+          <p class="texto tema">O consumo consciente significa reduzir o desperdício, optar por produtos orgânicos,
+            locais ou
+            sustentáveis e reutilizar ou reciclar materiais. Assim, reduzimos nosso impacto ambiental e incentivamos uma
+            produção mais sustentável.</p>
+        </li>
+        <li class="itens item_lista">
+          <h4 class="subtitulo tema">Preservação de Áreas Naturais</h4>
+          <p class="texto tema">Proteger as áreas naturais, como florestas, praias e rios, é uma ação sustentável que
+            ajuda a
+            manter a biodiversidade do planeta e garante a sobrevivência de espécies animais e vegetais.</p>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -231,7 +235,8 @@
       <h1 class="titulo tema">
         Benefícios da Sustentabilidade
       </h1>
-      <p class="texto tema">A sustentabilidade traz benefícios para todos: melhora a qualidade de vida, cria empregos verdes,
+      <p class="texto tema">A sustentabilidade traz benefícios para todos: melhora a qualidade de vida, cria empregos
+        verdes,
         incentiva a inovação e o desenvolvimento sustentável, reduz os custos de produção, preserva o meio ambiente e
         garante um futuro melhor.</p>
     </div>
@@ -245,20 +250,20 @@
           Impactos positivos ao meio ambiente
         </h3>
       </li>
-      <li class="itens">
+      <li class="itens item_lista">
         <img src="img/biodiversidade.png" alt="" class="img_1">
         <h4 class="subtitulo tema">Biodiversidade</h4>
         <p class="texto tema">A sustentabilidade ajuda a manter a biodiversidade das espécies animais e vegetais do
           planeta,
           mantendo o equilíbrio ecológico e evitando a extinção de espécies.</p>
       </li>
-      <li class="itens">
+      <li class="itens item_lista">
         <img src="img/turismo.png" alt="" class="img_2">
         <h4 class="subtitulo tema">Lazer e Turismo Sustentável</h4>
         <p class="texto tema">A sustentabilidade permite a exploração de áreas naturais sem prejudicar o meio ambiente,
           criando opções de lazer e turismo sustentável.</p>
       </li>
-      <li class="itens">
+      <li class="itens item_lista">
         <img src="img/industria.png" alt="" class="img_3">
         <h4 class="subtitulo tema">Indústria Sustentável</h4>
         <p class="texto tema">Com a sustentabilidade, a indústria pode ser mais eficiente, reduzindo desperdícios,
@@ -272,7 +277,8 @@
       <h1 class="titulo tema">
         Mudando o mundo através da sustentabilidade
       </h1>
-      <p class="texto tema">A sustentabilidade depende de nós. Ao colocar em prática as ações sustentáveis em nossas vidas
+      <p class="texto tema">A sustentabilidade depende de nós. Ao colocar em prática as ações sustentáveis em nossas
+        vidas
         diárias, podemos inspirar outras pessoas a seguir o nosso exemplo. Juntos, podemos mudar o mundo e garantir um
         futuro sustentável para todos.</p>
     </div>
