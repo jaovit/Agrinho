@@ -2,11 +2,12 @@
 var modo = true;
 var root = document.documentElement;
 var elementosMudar = document.querySelectorAll('.tema');
-var titulo =  document.querySelectorAll(".titulo")
-var subtitulo =  document.querySelectorAll(".subtitulo")
+var titulo = document.querySelectorAll(".titulo")
+var subtitulo = document.querySelectorAll(".subtitulo")
 var texto = document.querySelectorAll(".texto")
-var txt_125 = document.querySelectorAll(".item_lista")
-var txt_120 = document.querySelector(".titulo_120")
+var txt_125 = document.querySelectorAll(".vtxt_125")
+var txt_120 = document.querySelector(".vtxt_120")
+var img_130 = document.querySelector(".vimg_130")
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     modo = true;
@@ -76,24 +77,24 @@ var barraFont = document.querySelector("#progress_font_size")
 
 barraFont.addEventListener("input", fonte);
 
-function fonte(){
+function fonte() {
     document.querySelector(".fonte_tamanho").innerHTML = barraFont.value / 100
     root.style.setProperty('--font-size-js', barraFont.value / 100);
 
-    if (barraFont.value > 125){
+    if (barraFont.value > 125) {
         for (var i = 0; i < txt_125.length; i++) {
             txt_125[i].classList.add('txt_125');
         }
-    } else{
+    } else {
         for (var i = 0; i < txt_125.length; i++) {
             txt_125[i].classList.remove('txt_125');
         }
     }
 
-    if (barraFont.value > 120){
-            txt_120.classList.add('txt_120');
-    } else{
-            txt_120.classList.remove('txt_120');
+    if (barraFont.value > 120) {
+        txt_120.classList.add('txt_120');
+    } else {
+        txt_120.classList.remove('txt_120');
     }
 }
 
@@ -102,9 +103,16 @@ var barraImg = document.querySelector("#progress_img")
 
 barraImg.addEventListener("input", img);
 
-function img(){
+function img() {
     document.querySelector(".img_tamanho").innerHTML = barraImg.value / 100
     root.style.setProperty('--tamanho-img', barraImg.value / 100);
+
+    if (barraImg.value > 120) {
+        img_130.classList.add('img_130');
+    } else {
+        img_130.classList.remove('img_130');
+    }
+
 }
 
 // geral
@@ -112,67 +120,80 @@ var barraGeral = document.querySelector("#progress_geral")
 
 barraGeral.addEventListener("input", geral);
 
-function geral(){
+function geral() {
     document.querySelector(".geral_tamanho").innerHTML = barraGeral.value / 100
 
     document.querySelector(".fonte_tamanho").innerHTML = barraGeral.value / 100
     root.style.setProperty('--font-size-js', barraGeral.value / 100);
-    barraFont.value = barraGeral.value; 
+    barraFont.value = barraGeral.value;
 
     document.querySelector(".img_tamanho").innerHTML = barraGeral.value / 100
     root.style.setProperty('--tamanho-img', barraGeral.value / 100);
-    barraImg.value = barraGeral.value 
+    barraImg.value = barraGeral.value
 
-    if (barraFont.value > 125){
+    if (barraFont.value > 125) {
         for (var i = 0; i < txt_125.length; i++) {
             txt_125[i].classList.add('txt_125');
         }
-    } else{
+    } else {
         for (var i = 0; i < txt_125.length; i++) {
             txt_125[i].classList.remove('txt_125');
         }
     }
 
-    if (barraFont.value > 120){
-            txt_120.classList.add('txt_120');
-    } else{
-            txt_120.classList.remove('txt_120');
+    if (barraFont.value > 120) {
+        txt_120.classList.add('txt_120');
+    } else {
+        txt_120.classList.remove('txt_120');
     }
+
+    if (barraImg.value > 120) {
+        img_130.classList.add('img_130');
+    } else {
+        img_130.classList.remove('img_130');
+    }
+
 
 }
 
 // resetar
 
-function resetConf(){
+function resetConf() {
     barraFont.value = 100;
     barraImg.value = 100;
     barraGeral.value = 100;
 
-    if (barraFont.value > 125){
+    if (barraFont.value > 125) {
         for (var i = 0; i < txt_125.length; i++) {
             txt_125[i].classList.add('txt_125');
         }
-    } else{
+    } else {
         for (var i = 0; i < txt_125.length; i++) {
             txt_125[i].classList.remove('txt_125');
         }
     }
 
-    if (barraFont.value > 120){
-            txt_120.classList.add('txt_120');
-    } else{
-            txt_120.classList.remove('txt_120');
+    if (barraFont.value > 120) {
+        txt_120.classList.add('txt_120');
+    } else {
+        txt_120.classList.remove('txt_120');
+    }
+
+    if (barraImg.value > 120) {
+        img_130.classList.add('img_130');
+    } else {
+        img_130.classList.remove('img_130');
     }
 
     geral()
-    
+
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         modo = false;
         // true = escuro;
         for (var i = 0; i < elementosMudar.length; i++) {
             elementosMudar[i].classList.remove('claro');
         }
-    
+
     } else {
         modo = true
         // false = claro;
