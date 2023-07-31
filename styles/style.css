@@ -152,51 +152,28 @@ table {
 }
 
 /* tablet */
-/* @media (max-width: 850px) {
-  .titulo {
-    font-size: calc(var(--font-size-js) * 3vw);
-    margin-bottom: 2.5vw;
-  }
-  
-  .subtitulo {
-    font-size: calc(var(--font-size-js) * 2.25vw);
-    margin-bottom:   1.75vw;
-  }
-  
-  .texto {
-    font-size: calc(var(--font-size-js) * 1.9vw) ;
-    line-height: calc(var(--font-size-js) * 3vw);
-  }
-  
-} */
-
-/* celular  */
-
-@media (max-width: 500px) {
-
+@media (max-width: 850px) {
   html {
-    scroll-padding-top: 15vw;
+    scroll-padding-top: 8vw;
   }
 
   .titulo {
-    font-size: calc(var(--font-size-js) * 4.35vw);
+    font-size: calc(var(--font-size-js) * 3.5vw);
+    margin-bottom: calc(var(--font-size-js) * 1.75vw);
+    font-weight: 400;
+  }
+
+  .subtitulo {
+    font-size: calc(var(--font-size-js) * 2.5vw);
     margin-bottom: calc(var(--font-size-js) * 1.5vw);
     font-weight: 400;
-
-  }
-
-  .subtitulo {
-    font-size: calc(var(--font-size-js) * 4vw);
-    margin-bottom: calc(var(--font-size-js) * 1.25vw);
-    font-weight: 400;
   }
 
   .texto {
-    font-size: calc(var(--font-size-js) * 3.75vw);
-    line-height: calc(var(--font-size-js) * 4.25vw);
+    font-size: calc(var(--font-size-js) * 2.15vw);
+    line-height: calc(var(--font-size-js) * 3vw);
     font-weight: 400;
   }
-
 
   .titulo.claro {
     font-weight: 600;
@@ -210,29 +187,37 @@ table {
   .texto.claro {
     font-weight: 500;
   }
+
 }
 
-/* @media (min-width: 1200px) {
+/* celular  */
+
+@media (max-width: 500px) {
+
+  html {
+    scroll-padding-top: 15vw;
+  }
 
   .titulo {
-    font-size: calc(var(--font-size-js) * 2vw);
-  margin-bottom: 2vw;
+    font-size: calc(var(--font-size-js) * 4.5vw);
+    margin-bottom: calc(var(--font-size-js) * 1.75vw);
+
   }
-  
+
   .subtitulo {
-    font-size: calc(var(--font-size-js) * 1.35vw);
-  margin-bottom:   1.5vw;
+    font-size: calc(var(--font-size-js) * 4.15vw);
+    margin-bottom: calc(var(--font-size-js) * 1.5vw);
   }
-  
+
   .texto {
-    font-size: calc(var(--font-size-js) * .9vw) ;
-  line-height: 1.5vw;
-  background: red;
+    font-size: calc(var(--font-size-js) * 3.9vw);
+    line-height: calc(var(--font-size-js) * 5vw);
   }
- } */
+
+}
 
 /* ultra wide */
-/* @media (min-width: 1440px ) and (max-height: 550px){
+/* @media (min-width: 1440px ) and (max-height: 575px){
     .template {
         background-color: rgb(12, 245, 90);
     }

@@ -2,7 +2,7 @@
 
 .ex_acoes {
     position: relative;
-    padding:  2vw 12vw;
+    padding: 2vw 12vw;
     text-align: center;
     background-color: var(--cor-segundaria);
 }
@@ -22,11 +22,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2vw 0;
+    padding: 2vw 3vw;
     background-color: var(--cor-segundaria);
 }
 
-.benefcios .conteudo{
+.benefcios .conteudo {
     width: 35vw;
 }
 
@@ -36,51 +36,73 @@
 }
 
 /* tablet */
-/* @media (max-width: 850px) {
-    .template {
-        background-color: red;
-    }
-} */
-
-    /* celular  */
-@media (max-width: 500px) {
-
+@media (max-width: 850px) {
     .benefcios {
-        padding: 3vw 0;
+        padding: 3vw;
     }
-    
-    .benefcios .conteudo{
-        width: 60vw;
+
+    .benefcios.img_130 {
+        flex-direction: column;
     }
-    
-    .benefcios .texto{
-        margin-left: 2vw;
+
+    .benefcios.img_130 .conteudo {
+        width: 85vw;
+    }
+
+    .benefcios .conteudo {
+        width: 57.5vw;
+    }
+
+    .benefcios .texto {
+        margin-left: 1.75vw;
     }
 
     .benefcios img {
-        margin-left: 4vw;
-        width: calc(var(--tamanho-img) * 25vw);
+        margin-left: 2vw;
+        margin-top: 3.5vw;
+        width: calc(var(--tamanho-img) * 20vw);
     }
 
     .ex_acoes {
-        padding:  2.5vw 5vw;
+        padding: 2.5vw 3vw;
     }
-    
+
     .ex_acoes .lista {
         grid-row-gap: 5vw;
         margin-top: 3vw;
     }
 
-    .ex_acoes .itens.txt_125{
+}
+
+/* celular  */
+@media (max-width: 500px) {
+
+    .benefcios .conteudo {
+        width: 60vw;
+    }
+
+    .benefcios .texto {
+        margin-left: 2vw;
+    }
+
+    .benefcios img {
+        width: calc(var(--tamanho-img) * 30vw);
+    }
+
+    .ex_acoes {
+        padding: 2.5vw 5vw;
+    }
+
+    .ex_acoes .itens.txt_125 {
         margin-top: 5vw;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row: auto;
     }
-} 
+}
 
-    /* ultra wide */
-/* @media (min-width: 1440px ) and (max-height: 550px){
+/* ultra wide */
+/* @media (min-width: 1440px ) and (max-height: 575px){
     .template {
         background-color: rgb(12, 245, 90);
     }
