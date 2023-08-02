@@ -39,53 +39,16 @@ nav.addEventListener('click', function (event) {
     event.stopPropagation();
 });
 
-// const searchInput = document.getElementById('searchInput');
-// const allTextElements = document.querySelectorAll('.titulo, .subtitulo, .texto');
+var input = document.querySelector('.menu_audio input');
+var menuAudio = document.querySelector('.menu_audio')
 
-// searchInput.addEventListener('input', selectText);
+menuAudio.classList.add("transition")
+input.addEventListener("input", menu_audio) 
 
-// function selectText() {
-//   const searchTerm = searchInput.value.trim();
-//   if (searchTerm === '') {
-//     removeAllSelections();
-//     return;
-//   }
-
-//   removeAllSelections();
-
-//   allTextElements.forEach(element => {
-//     const text = element.textContent;
-//     const regex = new RegExp(`(${escapeRegExp(searchTerm)})`, 'gi');
-//     const matches = text.match(regex);
-//     if (matches) {
-//       matches.forEach(match => selectInElement(element, match));
-//     }
-//   });
-// }
-
-// function removeAllSelections() {
-//   if (window.getSelection) {
-//     const selection = window.getSelection();
-//     selection.removeAllRanges();
-//   }
-// }
-
-// function selectInElement(element, searchTerm) {
-//   const regex = new RegExp(`(${escapeRegExp(searchTerm)})`, 'gi');
-//   const matches = element.textContent.match(regex);
-//   if (matches) {
-//     const range = document.createRange();
-//     range.selectNodeContents(element);
-//     matches.forEach(match => {
-//       const start = element.textContent.indexOf(match);
-//       range.setStart(element.firstChild, start);
-//       range.setEnd(element.firstChild, start + match.length);
-//       const selection = window.getSelection();
-//       selection.addRange(range);
-//     });
-//   }
-// }
-
-// function escapeRegExp(string) {
-//   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-// }
+function menu_audio(){
+    if (input.checked) {
+        menuAudio.classList.add('menuAudio_aberto')
+    } else {
+        menuAudio.classList.remove('menuAudio_aberto')
+    }
+}

@@ -7,6 +7,7 @@ var subtitulo = document.querySelectorAll(".subtitulo")
 var texto = document.querySelectorAll(".texto")
 var txt_125 = document.querySelectorAll(".vtxt_125")
 var txt_120 = document.querySelector(".vtxt_120")
+var txt_110 = document.querySelector(".vtxt_110")
 var img_130 = document.querySelector(".vimg_130")
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -96,6 +97,12 @@ function fonte() {
     } else {
         txt_120.classList.remove('txt_120');
     }
+
+    if (barraFont.value > 110) {
+        txt_110.classList.add('txt_110');
+    } else {
+        txt_110.classList.remove('txt_110');
+    }
 }
 
 // tamanho img
@@ -153,6 +160,11 @@ function geral() {
         img_130.classList.remove('img_130');
     }
 
+    if (barraFont.value > 110) {
+        txt_110.classList.add('txt_110');
+    } else {
+        txt_110.classList.remove('txt_110');
+    }
 
 }
 
@@ -183,6 +195,12 @@ function resetConf() {
         img_130.classList.add('img_130');
     } else {
         img_130.classList.remove('img_130');
+    }
+
+    if (barraFont.value > 110) {
+        txt_110.classList.add('txt_110');
+    } else {
+        txt_110.classList.remove('txt_110');
     }
 
     geral()
