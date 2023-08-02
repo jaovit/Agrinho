@@ -26,19 +26,12 @@
 
   <header class="header scroll_header content">
     <input type="checkbox" id="menu_input">
-    <!-- <div class="logo">
-      <img src="" alt="">
-    </div> -->
+    <div class="logo">
+      <img src="img/logo_escola.png" alt="colégio estadual bom jesus e.f.m" class="logo_escola">
+      <div class="texto">Colégio Estadual Bom Jesus E.F.M</div>
+    </div>
 
     <ul class="header_itens">
-      <li class="itens">
-        <a href="#">
-          <p class="texto tema scroll_header">
-            <!-- <input type="search" id="searchInput" placeholder="Pesquisar" > -->
-            Pesquisar
-          </p>
-        </a>
-      </li>
 
       <li class="itens">
         <a href="#">
@@ -65,23 +58,22 @@
           </h4>
           <ul class="opcoes">
             <li class="itens">
-              <label class="texto tema"> Tema:
-                <input type="checkbox" id="input_tema" onclick="mudarRoot()">
+              <label class="texto tema">
+                <input type="button" id="input_tema" class="bnt_reset" value="Mudar tema" onclick="mudarRoot()">
               </label>
             </li>
             <li class="itens">
               <label for="progress_font_size" class="texto tema"> Tamanho da fonte: <span class="fonte_tamanho num">
-                  &nbsp;
                   1</span> </label>
               <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
             </li>
             <li class="itens">
-              <label for="progress_img" class="texto tema"> Tamanho da imagem: <span class="img_tamanho num"> &nbsp;
+              <label for="progress_img" class="texto tema"> Tamanho da imagem: <span class="img_tamanho num">
                   1</span> </label>
               <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
             </li>
             <li class="itens">
-              <label for="progress_geral" class="texto tema"> Geral: <span class="geral_tamanho num"> &nbsp;
+              <label for="progress_geral" class="texto tema"> Geral: <span class="geral_tamanho num">
                   1</span> </label>
               <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
             </li>
@@ -104,6 +96,17 @@
     </div>
 
   </header>
+
+  <section class="menu_audio">
+    <input type="checkbox" id="audio_input">
+
+    <label class="clic_audio" for="audio_input">
+    </label>
+    <audio controls>
+      <source src="caminho/do/arquivo-de-audio.mp3" type="audio/mpeg">
+      Seu navegador não suporta áudios.
+    </audio>
+  </section>
 
   <section class="template content tema">
     <div class="conteudo">
@@ -182,34 +185,34 @@
     </div>
   </section>
 
-  <section class="ex_acoes scrollTexto" id="ex_acoes">
+  <section class="ex_acoes scrollTexto vtxt_125" id="ex_acoes">
     <div class="conteudo">
       <h3 class="titulo tema">
         Exemplos de ações sustentáveis
       </h3>
       <ul class="lista">
-        <li class="itens vtxt_125">
+        <li class="itens">
           <h4 class="subtitulo tema">Energias Renováveis</h4>
           <p class="texto tema">O uso de fontes renováveis de energia, como a solar, eólica, hidrelétrica ou geotérmica,
             é
             uma
             ação sustentável que ajuda a reduzir a poluição e o consumo de combustíveis fósseis.</p>
         </li>
-        <li class="itens vtxt_125">
+        <li class="itens">
           <h4 class="subtitulo tema">Transporte Sustentável</h4>
           <p class="texto tema">Pedalar, caminhar ou compartilhar carros são opções que reduzem a emissão de gases
             poluentes
             e
             incentivam o uso de transportes sustentáveis.</p>
         </li>
-        <li class="itens vtxt_125">
+        <li class="itens">
           <h4 class="subtitulo tema">Consumo Responsável</h4>
           <p class="texto tema">O consumo consciente significa reduzir o desperdício, optar por produtos orgânicos,
             locais ou
             sustentáveis e reutilizar ou reciclar materiais. Assim, reduzimos nosso impacto ambiental e incentivamos uma
             produção mais sustentável.</p>
         </li>
-        <li class="itens vtxt_125">
+        <li class="itens">
           <h4 class="subtitulo tema">Preservação de Áreas Naturais</h4>
           <p class="texto tema">Proteger as áreas naturais, como florestas, praias e rios, é uma ação sustentável que
             ajuda a
@@ -245,27 +248,27 @@
     <img src="img/biodiversidade.png" alt="Benefícios da sustentabilidade">
   </section>
 
-  <section class="impactos scrollTexto" id="impactos">
+  <section class="impactos scrollTexto vtxt_125" id="impactos">
     <ul class="lista conteudo">
       <li class="titulo tema">
         <h3>
           Impactos positivos ao meio ambiente
         </h3>
       </li>
-      <li class="itens item_lista">
+      <li class="itens">
         <img src="img/biodiversidade.png" alt="" class="img_1">
         <h4 class="subtitulo tema">Biodiversidade</h4>
         <p class="texto tema">A sustentabilidade ajuda a manter a biodiversidade das espécies animais e vegetais do
           planeta,
           mantendo o equilíbrio ecológico e evitando a extinção de espécies.</p>
       </li>
-      <li class="itens item_lista">
+      <li class="itens">
         <img src="img/turismo.png" alt="" class="img_2">
         <h4 class="subtitulo tema">Lazer e Turismo Sustentável</h4>
         <p class="texto tema">A sustentabilidade permite a exploração de áreas naturais sem prejudicar o meio ambiente,
           criando opções de lazer e turismo sustentável.</p>
       </li>
-      <li class="itens item_lista">
+      <li class="itens ">
         <img src="img/industria.png" alt="" class="img_3">
         <h4 class="subtitulo tema">Indústria Sustentável</h4>
         <p class="texto tema">Com a sustentabilidade, a indústria pode ser mais eficiente, reduzindo desperdícios,
@@ -286,9 +289,31 @@
     </div>
   </section>
 
-  <footer class="footer">
-
+  <footer class="footer vtxt_110">
+    <ul class="lista">
+      <li class="itens texto"><img src="img/logo_escola.png" alt="logo da escola" class="logo_escola"> Colégio Estadual
+        Bom Jesus E.F.M</li>
+      <li class="itens texto"><span class="titulo">Endereço:</span> <a href="https://goo.gl/maps/vecZkPFKK8psWQD76"
+          class="texto">Av. Ipiranga, 133 - Centro, Bom Jesus do Sul - PR, 85708-000</a>
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14320.658600164077!2d-53.6020241!3d-26.1913217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f09063fd6b7abd%3A0xeec2efbc2e39fe07!2sCol%C3%A9gio%20Estadual%20Bom%20Jesus!5e0!3m2!1spt-BR!2sbr!4v1690927125144!5m2!1spt-BR!2sbr"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </li>
+      <li class="itens texto"><span class="titulo">Telefone:</span> <span class="info"> &nbsp;(46) 3548-1121</span>
+      </li>
+      <li class="itens texto"><span class="titulo">Fecebook:</span> <span class="info"> <a href="https://www.facebook.com/cebomjesusefm" class="texto">Colegio Estadual B.J.S</a></span>
+      </li>
+      <li class="itens texto"><span class="titulo">Professor:</span> <span class="info"> &nbsp;Eli Berto Dambros</span>
+      </li>
+      <li class="itens texto"><span class="titulo">Aluno:</span> <span class="info"> &nbsp;João Vitor da Silva
+          Antunes</span></li>
+      <li class="itens texto"> &copy; Sustentabilidade: Ações que mudam o mundo - 2023</li>
+    </ul>
   </footer>
+
 </body>
 
 </html>
