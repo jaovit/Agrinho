@@ -15,11 +15,11 @@
 
 .header_itens {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .header_itens .itens:not(.opcoes .itens) {
-    margin: 0 3.5vw;
+    margin: 0 3vw;
 }
 
 .header_itens a {
@@ -51,9 +51,20 @@
 
 
 /* logo */
+
 .logo {
     position: absolute;
-    right: 1.5vw;
+    left: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.logo .texto {
+    font-size: calc(var(--font-size-js) * .85vw);
+}
+
+.logo_escola {
+    width: 5vw;
 }
 
 /* menu */
@@ -155,7 +166,7 @@ input[type="checkbox"]:checked~.header_itens .configuracao {
     border-bottom: var(--borda-menu);
     border-top: var(--borda-menu);
     width: 100%;
-    padding: 1vw;
+    padding: .75vw 1vw;
     display: grid;
     grid-template-rows: auto;
     align-items: center;
@@ -254,6 +265,16 @@ input[type="checkbox"]:checked~.header_itens .configuracao {
 
     }
 
+    /* logo */
+
+    .logo .texto {
+        display: none;
+    }
+
+    .logo_escola {
+        width: 5.4vw;
+    }
+
     /* configuração */
 
     .configuracao {
@@ -307,7 +328,7 @@ input[type="checkbox"]:checked~.header_itens .configuracao {
         background-color: #191919;
     }
 
-    .header_itens .itens:not(.opcoes .itens, .header_itens .itens:nth-child(5)) {
+    .header_itens .itens:not(.opcoes .itens, .header_itens .itens:nth-child(4)) {
         display: none;
     }
 
@@ -343,6 +364,15 @@ input[type="checkbox"]:checked~.header_itens .configuracao {
     input[type="checkbox"]:checked~.botao .barras:nth-child(3) {
         transform: rotate(-45deg) translate(15.5%, -2.25vw);
 
+    }
+
+    .logo{
+        left: 2vw;
+    }
+
+    .logo_escola {
+        width: 15vw;
+        z-index: 5;
     }
 
     .configuracao {

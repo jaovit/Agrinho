@@ -129,6 +129,71 @@
     line-height: calc(var(--font-size-js) * 1.35vw);
 }
 
+/* acessbilidade */
+
+.menu_audio {
+    position: fixed;
+    bottom: 2.5vw;
+    transform: translateX(-100%);
+    left: 0;
+    z-index: 5;
+    background-color: #191919;
+    border: var(--borda-menu);
+    border-left: none;
+}
+
+.menu_audio.transition {
+    transition: all 1s;
+}
+
+.menu_audio.menuAudio_aberto {
+    transform: translateX(0%);
+}
+
+.clic_audio {
+    position: absolute;
+    left:calc(100% - .1vw);
+    top: 51%;
+    transform: translateY(-50%);
+    background-color: #191919;
+    height: 70%;
+    width: 1.75vw;
+    border-radius: 0 1vw 1vw 0;
+    border: var(--borda-menu);
+    border-left: none;
+}
+
+#audio_input {
+    display: none;
+}
+
+.menu_audio audio {
+    position: relative;
+    width: 30vw;
+    margin: .75vw;
+}
+
+.menu_audio audio::-webkit-media-controls-enclosure {
+    background-color: transparent;
+}
+
+.menu_audio audio::-webkit-media-controls-panel {
+    filter: invert(100%);
+    transform: scale(1.1);
+
+}
+
+.menu_audio audio::-webkit-media-controls-current-time-display,
+.menu_audio audio::-webkit-media-controls-time-remaining-display {
+    color: var(--cor-titulo);
+    font-size: calc(var(--font-size-js) * 1vw);
+    filter: invert(100%);
+}
+
+.menu_audio audio::-webkit-media-controls-play-button {
+    transform: scale(1.5);
+}
+
 /* tablet */
 @media (max-width: 850px) {
     .template {
@@ -183,6 +248,30 @@
         font-size: calc(var(--font-size-js) * 2vw);
     }
 
+    /* acessbilidade */
+
+    .menu_audio {
+        bottom: 5vw;
+    }
+
+    .clic_audio {
+        height: 70%;
+        width: 2.5vw;
+        border-radius: 0 2vw 2vw 0;
+    }
+
+    .menu_audio audio {
+        width: 45vw;
+    }
+
+    .menu_audio audio::-webkit-media-controls-current-time-display,
+    .menu_audio audio::-webkit-media-controls-time-remaining-display {
+        font-size: calc(var(--font-size-js) * 1.85vw);
+    }
+
+    .menu_audio audio::-webkit-media-controls-play-button {
+        transform: scale(1.25);
+    }
 }
 
 /* celular  */
@@ -244,6 +333,27 @@
         line-height: calc(var(--font-size-js) * 4vw);
         font-size: calc(var(--font-size-js) * 3.5vw);
     }
+
+    /* acessbilidade */
+
+    .menu_audio {
+        bottom: 10vw;
+    }
+
+    .clic_audio {
+        width: 4.5vw;
+        border-radius: 0 2.75vw 2.75vw 0;
+    }
+
+    .menu_audio audio {
+        width: 75vw;
+    }
+
+    .menu_audio audio::-webkit-media-controls-current-time-display,
+    .menu_audio audio::-webkit-media-controls-time-remaining-display {
+        font-size: calc(var(--font-size-js) * 2.75vw);
+    }
+
 }
 
 /* ultra wide */
