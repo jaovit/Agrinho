@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-  <link rel="icon" href="img/logo_escola.png">
+  <link rel="icon" href="img/logo_escola.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -29,28 +29,29 @@
 
   <header class="header scroll_header content">
     <input type="checkbox" id="menu_input">
+
     <div class="logo scroll_header">
-      <img src="img/logo_escola.png" alt="colégio estadual bom jesus e.f.m" class="logo_escola">
-      <p class="texto tema">Colégio Estadual Bom Jesus E.F.M</p>
+      <img src="img/logo_escola.jpg" alt="colégio estadual bom jesus e.f.m" class="logo_escola">
+      <p class="texto tema vtxt_125 textColor">Colégio Estadual Bom Jesus E.F.M</p>
     </div>
 
     <ul class="header_itens scroll_header tema">
 
       <li class="itens">
         <a href="#" onclick="nativo()">
-          <p class="texto">Compartilhar</p>
+          <p class="texto tema textColor">Compartilhar</p>
         </a>
       </li>
 
       <li class="itens">
-        <a href="#" onclick="Comentar()">
-          <p class="texto">Comentar</p>
+        <a href="#" onclick="comentar()">
+          <p class="texto tema textColor">Comentar</p>
         </a>
       </li>
 
       <li class="itens">
         <a href="#" onclick="entrar()">
-          <p class="texto">Entrar</p>
+          <p class="texto tema textColor">Entrar</p>
         </a>
       </li>
     </ul>
@@ -67,8 +68,8 @@
         </li>
 
         <li class="itens cabec">
-          <a href="#" onclick="Comentar()">
-            <p class="texto">Comentar</p>
+          <a href="#" onclick="comentar()">
+            <p class="texto">Comentar<i class="far fa-comment"></i></p>
           </a>
         </li>
 
@@ -99,29 +100,29 @@
               onclick="mudarRoot()">
           </label>
         </li>
-        <li class="itens">
+        <li class="itens color">
           <p class="texto">Cores de fundo:</p>
           <label for="input_cor_1" class="texto">Principal:</label>
-          <input type="color" id="input_cor_1">
+          <input type="color" id="input_cor_1" class="input_cor">
 
           <label for="input_cor_1" class="texto">Segundaria:</label>
-          <input type="color" id="input_cor_2">
+          <input type="color" id="input_cor_2" class="input_cor">
         </li>
-        <li class="itens">
+        <li class="itens color">
           <p class="texto">Cores de texto:</p>
           <label for="input_cor_1" class="texto">Titulo:</label>
-          <input type="color" id="input_cor_3" class="texto">
+          <input type="color" id="input_cor_3" class="input_cor">
 
           <label for="input_cor_1" class="texto">Texto:</label>
-          <input type="color" id="input_cor_4">
+          <input type="color" id="input_cor_4" class="input_cor">
         </li>
-        <li class="itens">
+        <li class="itens color">
           <p class="texto">Cores de menu:</p>
           <label for="input_cor_1" class="texto">Fundo:</label>
-          <input type="color" id="input_cor_5">
+          <input type="color" id="input_cor_5" class="input_cor">
 
           <label for="input_cor_1" class="texto">Texto:</label>
-          <input type="color" id="input_cor_6">
+          <input type="color" id="input_cor_6" class="input_cor">
         </li>
         <li class="itens">
           <label class="texto">
@@ -175,7 +176,7 @@
 
       </form>
     </section>
-    <section class="contato">
+    <section class="comentar">
       <form class="form">
         <h3 class="subtitulo">Comentar</h3>
         <input type="button" value="Sair" class="bnt texto sair" onclick="fechar()">
@@ -236,10 +237,11 @@
 
   <section class="template content tema">
     <div class="conteudo">
-      <h1 class="titulo tema vtxt_120">
+      <h1 class="titulo tema vtxt_120 titleColor">
         Sustentabilidade: Ações que mudam o mundo
       </h1>
-      <p class="texto tema">Mais do que uma palavra da moda, a sustentabilidade é um objetivo a ser alcançado. Juntos,
+      <p class="texto tema textColor">Mais do que uma palavra da moda, a sustentabilidade é um objetivo a ser alcançado.
+        Juntos,
         podemos tornar o mundo
         um lugar melhor.</p>
     </div>
