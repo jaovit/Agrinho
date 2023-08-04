@@ -179,7 +179,7 @@ function cor_principal(){
 input_cor_2.addEventListener("input", cor_segundaria)
 
 function cor_segundaria(){
-    root.style.setProperty('-cor-segundaria', input_cor_2.value);
+    root.style.setProperty('--cor-segundaria', input_cor_2.value);
 }
 
 
