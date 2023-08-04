@@ -40,7 +40,7 @@
     --cor-texto: #2e2e2e;
     --borda: solid .01vw rgb(70, 70, 70);
     --background-card: url(../img/fundo_elem.jpg);
-    --filtro: brightness(75%) opacity(.6);
+    --filtro: brightness(75%) opacity(.5);
   }
 }
 
@@ -144,9 +144,10 @@ table {
   font-weight: 400;
 }
 
-.texto.claro{
+.texto.claro {
   font-weight: 600;
 }
+
 /* aparecer com a rolagem */
 
 .scrollTexto .conteudo {
@@ -182,7 +183,8 @@ table {
     font-weight: 400;
   }
 
-  .titulo.claro, .subtitulo.claro {
+  .titulo.claro,
+  .subtitulo.claro {
     font-weight: 600;
   }
 
