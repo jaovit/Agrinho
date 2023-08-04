@@ -12,6 +12,12 @@ var img_130 = document.querySelector(".vimg_130")
 var input_cor_1 = document.querySelector("#input_cor_1")
 var input_cor_2 = document.querySelector("#input_cor_2")
 
+var input_cor_3 = document.querySelector("#input_cor_3")
+var input_cor_4 = document.querySelector("#input_cor_4")
+
+var input_cor_5 = document.querySelector("#input_cor_5")
+var input_cor_6 = document.querySelector("#input_cor_6")
+
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     modo = true;
     // true = escuro;
@@ -182,6 +188,19 @@ function cor_segundaria(){
     root.style.setProperty('--cor-segundaria', input_cor_2.value);
 }
 
+
+
+input_cor_3.addEventListener("input", cor_titulo)
+
+function cor_titulo(){
+    root.style.setProperty('--cor-titulo', input_cor_3.value);
+}
+
+input_cor_4.addEventListener("input", cor_texto)
+
+function cor_texto(){
+    root.style.setProperty('--cor-texto', input_cor_4.value);
+}
 
 // resetar
 
