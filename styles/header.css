@@ -36,7 +36,7 @@
 .header_itens .texto:hover,
 .header_itens.scrollou.claro .texto:hover,
 .header_itens.claro .texto:hover {
-    color: #e4b7a0;
+    color: var(--cor-menu-2);
     cursor: pointer;
 }
 
@@ -50,7 +50,7 @@
 .header_itens.scrollou.claro .texto,
 .logo.scrollou .texto.claro {
     font-weight: 300;
-    color: #c9c2c0;
+    color: var(--cor-text-menu);
 }
 
 
@@ -110,7 +110,7 @@
 }
 
 .botao.scrollou .barras {
-    background-color: #c9c2c0;
+    background-color: var(--cor-text-menu);
 }
 
 .barras:nth-child(1) {
@@ -119,7 +119,7 @@
 
 #menu_input:checked~.botao .barras:nth-child(1) {
     transform: rotate(45deg) translate(15.5%, 450%);
-    background-color: #c9c2c0;
+    background-color: var(--cor-text-menu);
     width: calc(100% - 1.5vw);
 }
 
@@ -143,7 +143,7 @@
 #menu_input:checked~.botao .barras:nth-child(3) {
     transform: rotate(-45deg) translate(15.5%, -450%);
     width: calc(100% - 1.5vw);
-    background-color: #c9c2c0;
+    background-color: var(--cor-text-menu);
 }
 
 /* configuração */
@@ -171,7 +171,7 @@
     font-weight: 500;
     margin: 1.5vw 0 1vw 0;
     text-align: center;
-    color: #EBCCBB;
+    color: var(--cor-menu-2);
 }
 
 .opcoes .itens {
@@ -184,13 +184,12 @@
     grid-template-rows: auto;
 }
 
-.opcoes .itens:hover {
+/* .opcoes .itens:hover {
     background-image: linear-gradient(to left, #ebccbbe3 -25%, #ebccbb00 90%);
-}
+} */
 
-.opcoes .texto.claro {
-    color: #c9c2c0;
-    font-weight: 400;
+.opcoes.claro .texto {
+    color: var(--cor-text-menu);
 }
 
 .num {
@@ -209,7 +208,7 @@
 }
 
 .progress::-webkit-slider-runnable-track {
-    background-color: #ffffff;
+    background-color: var(--cor-text-menu);
     height: .1vw;
     -webkit-appearance: none;
     appearance: none;
@@ -223,7 +222,7 @@
     appearance: none;
     width: .9vw;
     height: .9vw;
-    background-color: #ffffff;
+    background-color: var(--cor-text-menu);
     border-radius: 50%;
     cursor: pointer;
 
@@ -234,9 +233,9 @@
     left: calc(50% - 1vw);
     transform: translateX(-50%);
     background-color: transparent;
-    color: #e4b7a0;
+    color: var(--cor-text-menu);
     border-radius: .25vw;
-    border: .01vw solid #e4b7a0;
+    border: .01vw solid var(--cor-menu-2);
     padding: .25vw 2vw;
     font-weight: 500;
     transition: .75s ease-in-out;
@@ -331,6 +330,7 @@
     .header {
         padding: 0;
         height: 14.5vw;
+        border-bottom: var(--borda-menu);
     }
 
     .header.scrollou {
@@ -356,7 +356,7 @@
     }
 
     .botao .barras {
-        background-color: #c9c2c0;
+        background-color: var(--cor-text-menu);
         height: .4vw;
     }
 
