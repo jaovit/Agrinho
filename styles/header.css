@@ -47,6 +47,12 @@
     color: rgb(22, 22, 22);
 }
 
+.header_itens .texto.claro.txtColor,
+.logo .texto.claro.texto.txtColor {
+    color: var(--cor-texto);
+}
+
+
 .header_itens.scrollou.claro .texto,
 .logo.scrollou .texto.claro {
     font-weight: 300;
@@ -67,13 +73,18 @@
     font-size: calc(var(--font-size-js) * .9vw);
 }
 
+.logo .texto.txt_125 {
+    font-size: 1.125vw;
+}
+
 .logo.scrollou .texto.claro {
     font-weight: 500;
 }
 
 .logo_escola {
     width: 3.5vw;
-    margin: 0 .75vw .5vw 0;
+    margin: .5vw .75vw .5vw 0;
+    border-radius: 50%;
 }
 
 /* menu */
@@ -166,7 +177,8 @@
 
 .configuracao::-webkit-scrollbar-thumb {
     background-color: var(--cor-menu-2);
-  }
+}
+
 #menu_input:checked~.configuracao {
     transform: translateX(0)
 }
@@ -184,22 +196,18 @@
     border-bottom: var(--borda-menu);
     border-top: var(--borda-menu);
     width: 100%;
-    padding: .75vw 1vw;
+    padding: .5vw 1vw;
     display: grid;
     grid-template-rows: auto;
 }
 
-.opcoes .cabec{
+.opcoes .cabec {
     display: none;
 }
 
-.cabec a{
+.cabec a {
     text-decoration: none;
 }
-
-/* .opcoes .itens:hover {
-    background-image: linear-gradient(to left, #ebccbbe3 -25%, #ebccbb00 90%);
-} */
 
 .opcoes .texto {
     color: var(--cor-text-menu);
@@ -208,6 +216,34 @@
 .num {
     position: absolute;
     right: 4.5vw;
+}
+
+.color {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+
+.color label:first-of-type {
+    margin-left: 2vw;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.color label:last-of-type {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.color .input_cor {
+    margin-left: 3.25vw;
+    margin-bottom: .25vw;
+    width: 4vw;
+    height: 2vw;
+    grid-row: 3;
+    background-color: var(--cor-menu-2);
 }
 
 .progress {
@@ -258,10 +294,6 @@
     transform: translateX(-50%) scale(1.05);
 }
 
-/* config tema */
-
-
-/* config font-size */
 /* tablet */
 @media (max-width: 850px) {
     .header {
@@ -320,6 +352,16 @@
 
     .num {
         right: 5vw;
+    }
+
+    .color label:first-of-type {
+        margin-left: 5vw;
+    }
+
+    .color .input_cor {
+        margin-left: 6vw;
+        width: 5vw;
+        height: 3vw;
     }
 
     .progress {
@@ -400,7 +442,7 @@
     }
 
     .logo_escola {
-        width: 12.5vw;
+        width: 12vw;
         margin-bottom: 1.5vw;
         z-index: 5;
     }
@@ -421,7 +463,7 @@
     }
 
     .configuracao .subtitulo {
-        font-size: calc(var(--font-size-js) * 4.25vw);
+        font-size: calc(var(--font-size-js) * 4.6vw);
         margin: 0 0 2.5vw 0;
     }
 
@@ -429,12 +471,29 @@
         padding: 3vw 10vw;
     }
 
-    .opcoes .cabec{
+    .cabec {
         display: block;
+    }
+
+    .cabec .texto .fas,
+    .cabec .texto .far {
+        margin-left: 2vw;
     }
 
     .num {
         right: 30vw;
+    }
+
+    .color label:first-of-type {
+        margin-top: 1.25vw;
+        margin-left: 5.5vw;
+    }
+
+    .color .input_cor {
+        margin-top: .75vw;
+        margin-left: 10vw;
+        width: 10vw;
+        height: 6.35vw;
     }
 
     .progress {

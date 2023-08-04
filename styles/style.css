@@ -24,7 +24,7 @@
   --sub-titulo: #EBCCBB;
   --cor-texto: #c9c2c0;
   --borda: solid .01vw rgb(172, 170, 170);
-  --background-card: url(../img/fundo.jpeg);
+  --background-card: url(../img/fundo.jpg);
   --filtro: brightness(25%) opacity(.8);
 }
 
@@ -40,7 +40,7 @@
     --cor-texto: #2e2e2e;
     --borda: solid .01vw rgb(70, 70, 70);
     --background-card: url(../img/fundo_elem.jpg);
-    --filtro: brightness(75%) opacity(.75);
+    --filtro: brightness(75%) opacity(.6);
   }
 }
 
