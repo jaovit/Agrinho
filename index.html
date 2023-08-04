@@ -177,7 +177,7 @@
       </form>
     </section>
     <section class="comentar">
-      <form class="form">
+      <form class="form" id="form_c">
         <h3 class="subtitulo">Comentar</h3>
         <input type="button" value="Sair" class="bnt texto sair" onclick="fechar()">
 
@@ -193,11 +193,11 @@
         <label for="input_mensagem" class="texto">Mensagem:</label>
         <textarea cols="50" rows="10" id="input_mensagem" class="input texto mensagem" required></textarea>
 
-        <input type="submit" value="Enviar" class="bnt texto" onclick="fechar()">
+        <input type="submit" value="Enviar" class="bnt texto" onclick="fecharCompleto(false)">
       </form>
     </section>
     <section class="entrar">
-      <form class="form">
+      <form class="form" id="form_e">
         <h3 class="subtitulo">Entrar</h3>
         <input type="button" value="Sair" class="bnt texto sair" onclick="fechar()">
 
@@ -218,7 +218,7 @@
         <label for="input_senha" class="texto">Senha:</label>
         <input type="password" id="input_email" class="input texto" required>
 
-        <input type="submit" value="Entrar" class="bnt texto" onclick="fechar()">
+        <input type="submit" value="Entrar" class="bnt texto" onclick="fecharCompleto(true)">
       </form>
     </section>
   </section>
