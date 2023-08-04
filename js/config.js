@@ -9,6 +9,8 @@ var txt_125 = document.querySelectorAll(".vtxt_125")
 var txt_120 = document.querySelector(".vtxt_120")
 var txt_110 = document.querySelector(".vtxt_110")
 var img_130 = document.querySelector(".vimg_130")
+var input_cor_1 = document.querySelector("#input_cor_1")
+var input_cor_2 = document.querySelector("#input_cor_2")
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     modo = true;
@@ -57,7 +59,7 @@ function mudarRoot() {
             '--sub-titulo': '#EBCCBB',
             '--cor-texto': '#c9c2c0',
             '--borda': 'solid .01vw rgb(172, 170, 170)',
-            '--background-card': 'url(../img/mocha-01_3eb3a5cd.jpg)',
+            '--background-card': 'url(../img/fundo.jpeg)',
             '--filtro': 'brightness(35%)'
         }
 
@@ -167,6 +169,19 @@ function geral() {
     }
 
 }
+
+input_cor_1.addEventListener("input", cor_principal)
+
+function cor_principal(){
+    root.style.setProperty('--cor-principal', input_cor_1.value);
+}
+
+input_cor_2.addEventListener("input", cor_segundaria)
+
+function cor_segundaria(){
+    root.style.setProperty('-cor-segundaria', input_cor_2.value);
+}
+
 
 // resetar
 
