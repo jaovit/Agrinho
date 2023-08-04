@@ -216,7 +216,7 @@ function resetConf() {
         modo = true
         // false = claro;
         for (var i = 0; i < elementosMudar.length; i++) {
-            elementosMudaosMudar[i].classList.add('claro');
+            elementosMudar[i].classList.add('claro');
         }
     }
 
