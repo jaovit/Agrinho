@@ -11,14 +11,15 @@
   --fonte-principal: 'Montserrat', sans-serif;
   --fonte-subtitulo: 'Roboto', sans-serif;
   --borda-menu: solid .1vw #ebc4b0;
-  --cor-principal-deg: #302d2cc9;
   --menu-cor: #191919;
   --font-size-js: 1;
   --tamanho-img: 1;
   --cor-text-menu: #c9c2c0;
   --cor-menu-2: #e4b7a0;
 
+    /* modo claro padrão */
   --cor-principal: #292626;
+  --cor-principal-deg: #302d2cc9;
   --cor-segundaria: #413d3c;
   --cor-titulo: #e4b7a0;
   --sub-titulo: #EBCCBB;

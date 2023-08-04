@@ -20,7 +20,7 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-.header_itens .itens:not(.opcoes .itens) {
+.header_itens > .itens {
     margin: 0 1.75vw;
 }
 
