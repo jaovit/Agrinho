@@ -5,8 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.75vw;
-    background-color: var(--cor-principal);
+    padding: 1.25vw;
 }
 
 .acoes_susten .conteudo,
@@ -14,7 +13,7 @@
     flex-basis: 60vw;
     border-radius: 1vw;
     background-color: var(--cor-segundaria);
-    padding: 2.5vw;
+    padding: 1.75vw 2vw;
 }
 
 /* como aplicar as ações */
@@ -28,7 +27,6 @@
 .impactos {
     position: relative;
     padding: 2.25vw 10vw;
-    background-color: var(--cor-principal);
 
 }
 
@@ -62,7 +60,9 @@
 .impactos img {
     margin-bottom: 1vw;
     width: calc(var(--tamanho-img) * 17vw);
-    border-radius: 1vw;
+    height: calc(var(--tamanho-img) * 17vw);
+    object-fit: cover;
+    border-radius: .75vw;
 }
 
 /* tablet */
@@ -104,6 +104,7 @@
     .impactos img {
         margin: 1vw 0 1.5vw 0;
         width: calc(var(--tamanho-img) * 20vw);
+        height: calc(var(--tamanho-img) * 20vw);
     }
 }
 
@@ -140,14 +141,8 @@
     }
 
     .impactos img {
-        margin: 7vw 0 1.5vw 0;
-        width: calc(var(--tamanho-img) * 22.5vw);
+        margin: 5vw 0 1.5vw 0;
+        width: calc(var(--tamanho-img) * 40vw);
+        height: calc(var(--tamanho-img) * 25vw);
     }
 }
-
-/* ultra wide */
-/* @media (min-width: 1440px ) and (max-height: 575px){
-    .template {
-        background-color: rgb(12, 245, 90);
-    }
-} */

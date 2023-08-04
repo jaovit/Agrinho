@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4vw 0;
+    padding: 3vw 0;
     border-bottom: var(--borda);
     border-top: var(--borda);
 }
@@ -74,10 +74,3 @@
         margin-left: 2vw;
     }
 }
-
-/* ultra wide */
-/* @media (min-width: 1440px ) and (max-height: 575px){
-    .template {
-        background-color: rgb(12, 245, 90);
-    }
-} */
