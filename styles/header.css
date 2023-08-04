@@ -184,6 +184,14 @@
     grid-template-rows: auto;
 }
 
+.opcoes .cabec{
+    display: none;
+}
+
+.cabec a{
+    text-decoration: none;
+}
+
 /* .opcoes .itens:hover {
     background-image: linear-gradient(to left, #ebccbbe3 -25%, #ebccbb00 90%);
 } */
@@ -414,6 +422,10 @@
 
     .opcoes .itens {
         padding: 3vw 10vw;
+    }
+
+    .opcoes .cabec{
+        display: block;
     }
 
     .num {
