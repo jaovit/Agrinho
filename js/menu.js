@@ -52,3 +52,57 @@ function menu_audio(){
         menuAudio.classList.remove('menuAudio_aberto')
     }
 }
+
+
+// input type file 
+
+var Input = document.getElementById('input_foto');
+var Label = document.getElementById('label_foto');
+var texto_label = document.querySelector(".textolabel")
+
+Input.addEventListener('change', function() {
+  const file = this.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function() {
+      Label.style.backgroundImage = `url('${reader.result}')`;
+    };
+    reader.readAsDataURL(file);
+    texto_label.style.cssText = "display: none;"
+  } else {
+    Label.style.backgroundImage = 'none';
+  }
+});
+
+var fundo_element = document.querySelector(".formularios")
+var compartilhar_element = document.querySelector(".compartilhar")
+var contato_element = document.querySelector(".contato")
+var entrar_element = document.querySelector(".entrar")
+
+function compartilhar(){
+    entrar_element.style.cssText = "display: none"
+    contato_element.style.cssText = "display: none"
+    compartilhar_element.style.cssText = "display: block"
+    fundo_element.style.cssText = "display: block"
+}
+
+function contato(){
+    entrar_element.style.cssText = "display: none"
+    contato_element.style.cssText = "display: block"
+    compartilhar_element.style.cssText = "display: none"
+    fundo_element.style.cssText = "display: block"
+}
+
+function entrar(){
+    entrar_element.style.cssText = "display: block"
+    contato_element.style.cssText = "display: none"
+    compartilhar_element.style.cssText = "display: none"
+    fundo_element.style.cssText = "display: block"
+}
+
+function fechar(){
+    entrar_element.style.cssText = "display: none"
+    contato_element.style.cssText = "display: none"
+    compartilhar_element.style.cssText = "display: none"
+    fundo_element.style.cssText ="display: none"
+}

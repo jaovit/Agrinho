@@ -23,6 +23,3 @@ window.addEventListener("scroll", function () {
     elementosTexto[i].classList.toggle("scrollou", window.scrollY > (elementosTexto[i].offsetTop + elementosTexto[i].offsetHeight / (elementosTexto[i].offsetHeight / 75)) - window.innerHeight);
   }
 })
-
-console.log(window.innerHeight)
-console.log(window.innerWidth)
