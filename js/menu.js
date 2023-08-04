@@ -1,8 +1,8 @@
 var aberto = false
+var checkbox = document.querySelector('#menu_input');
 
 document.addEventListener('click', function (event) {
     var target = event.target;
-    var checkbox = document.querySelector('#menu_input');
     var label = document.querySelector('.clic_js');
     var nav = document.querySelector('.configuracao');
     if (target === checkbox) {
@@ -80,6 +80,7 @@ var contato_element = document.querySelector(".contato")
 var entrar_element = document.querySelector(".entrar")
 
 function compartilhar(){
+    checkbox.checked = false;
     entrar_element.style.cssText = "display: none"
     contato_element.style.cssText = "display: none"
     compartilhar_element.style.cssText = "display: block"
@@ -87,6 +88,7 @@ function compartilhar(){
 }
 
 function contato(){
+    checkbox.checked = false;
     entrar_element.style.cssText = "display: none"
     contato_element.style.cssText = "display: block"
     compartilhar_element.style.cssText = "display: none"
@@ -94,6 +96,7 @@ function contato(){
 }
 
 function entrar(){
+    checkbox.checked = false;
     entrar_element.style.cssText = "display: block"
     contato_element.style.cssText = "display: none"
     compartilhar_element.style.cssText = "display: none"
@@ -101,8 +104,21 @@ function entrar(){
 }
 
 function fechar(){
+    checkbox.checked = false;
     entrar_element.style.cssText = "display: none"
     contato_element.style.cssText = "display: none"
     compartilhar_element.style.cssText = "display: none"
     fundo_element.style.cssText ="display: none"
+}
+
+function nativo(){
+    fechar()
+	if (navigator.share !== undefined) {
+		navigator.share({
+			title: 'Sustentabilidade: Ações que mudam o mundo',
+			text: 'Um texto de resumo',
+			url: 'https://agrinho2023-iota.vercel.app/',
+		})
+		.catch((error) => compartilhar());
+	}
 }
