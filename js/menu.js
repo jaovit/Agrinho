@@ -43,9 +43,9 @@ var input = document.querySelector('.menu_audio input');
 var menuAudio = document.querySelector('.menu_audio')
 
 menuAudio.classList.add("transition")
-input.addEventListener("input", menu_audio) 
+input.addEventListener("input", menu_audio)
 
-function menu_audio(){
+function menu_audio() {
     if (input.checked) {
         menuAudio.classList.add('menuAudio_aberto')
     } else {
@@ -60,65 +60,65 @@ var Input = document.getElementById('input_foto');
 var Label = document.getElementById('label_foto');
 var texto_label = document.querySelector(".textolabel")
 
-Input.addEventListener('change', function() {
-  const file = this.files[0];
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = function() {
-      Label.style.backgroundImage = `url('${reader.result}')`;
-    };
-    reader.readAsDataURL(file);
-    texto_label.style.cssText = "display: none;"
-  } else {
-    Label.style.backgroundImage = 'none';
-  }
+Input.addEventListener('change', function () {
+    const file = this.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function () {
+            Label.style.backgroundImage = `url('${reader.result}')`;
+        };
+        reader.readAsDataURL(file);
+        texto_label.style.cssText = "display: none;"
+    } else {
+        Label.style.backgroundImage = 'none';
+    }
 });
 
 var fundo_element = document.querySelector(".formularios")
 var compartilhar_element = document.querySelector(".compartilhar")
-var contato_element = document.querySelector(".contato")
+var comentar_element = document.querySelector(".comentar")
 var entrar_element = document.querySelector(".entrar")
 
-function compartilhar(){
+function compartilhar() {
     checkbox.checked = false;
     entrar_element.style.cssText = "display: none"
-    contato_element.style.cssText = "display: none"
+    comentar_element.style.cssText = "display: none"
     compartilhar_element.style.cssText = "display: block"
     fundo_element.style.cssText = "display: block"
 }
 
-function contato(){
+function comentar() {
     checkbox.checked = false;
     entrar_element.style.cssText = "display: none"
-    contato_element.style.cssText = "display: block"
+    comentar_element.style.cssText = "display: block"
     compartilhar_element.style.cssText = "display: none"
     fundo_element.style.cssText = "display: block"
 }
 
-function entrar(){
+function entrar() {
     checkbox.checked = false;
     entrar_element.style.cssText = "display: block"
-    contato_element.style.cssText = "display: none"
+    comentar_element.style.cssText = "display: none"
     compartilhar_element.style.cssText = "display: none"
     fundo_element.style.cssText = "display: block"
 }
 
-function fechar(){
+function fechar() {
     checkbox.checked = false;
     entrar_element.style.cssText = "display: none"
-    contato_element.style.cssText = "display: none"
+    comentar_element.style.cssText = "display: none"
     compartilhar_element.style.cssText = "display: none"
-    fundo_element.style.cssText ="display: none"
+    fundo_element.style.cssText = "display: none"
 }
 
-function nativo(){
+function nativo() {
     fechar()
     compartilhar()
-	if (navigator.share !== undefined) {
-		navigator.share({
-			title: 'Sustentabilidade: Ações que mudam o mundo',
-			text: 'Um texto de resumo',
-			url: 'https://agrinho2023-iota.vercel.app/',
-		})
-	}
+    if (navigator.share !== undefined) {
+        navigator.share({
+            title: 'Sustentabilidade: Ações que mudam o mundo',
+            text: 'Um texto de resumo',
+            url: 'https://agrinho2023-iota.vercel.app/',
+        })
+    }
 }

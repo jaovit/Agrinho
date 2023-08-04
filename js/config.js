@@ -12,7 +12,9 @@ var input_cor_1 = document.querySelector("#input_cor_1")
 var input_cor_2 = document.querySelector("#input_cor_2")
 
 var input_cor_3 = document.querySelector("#input_cor_3")
+var tituloColor = document.querySelectorAll(".titleColor")
 var input_cor_4 = document.querySelector("#input_cor_4")
+var txtColor = document.querySelectorAll(".textColor")
 
 var input_cor_5 = document.querySelector("#input_cor_5")
 var input_cor_6 = document.querySelector("#input_cor_6")
@@ -33,6 +35,7 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 }
 
 function mudarRoot() {
+    resetcolor()
     if (modo) {
         var mudancas = {
             // claro
@@ -50,10 +53,10 @@ function mudarRoot() {
             '--cor-texto': '#2e2e2e',
             '--borda': 'solid .01vw rgb(70, 70, 70)',
             '--background-card': 'url(../img/fundo_elem.jpg)',
-            '--filtro': 'brightness(75%) opacity(.75)',
+            '--filtro': 'brightness(75%) opacity(.5)',
             // '--font-size-js': '1.5'
-        
-      }
+
+        }
 
         for (var i = 0; i < elementosMudar.length; i++) {
             elementosMudar[i].classList.add('claro');
@@ -77,7 +80,7 @@ function mudarRoot() {
             '--sub-titulo': '#EBCCBB',
             '--cor-texto': '#c9c2c0',
             '--borda': 'solid .01vw rgb(172, 170, 170)',
-            '--background-card': 'url(../img/fundo.jpeg)',
+            '--background-card': 'url(../img/fundo.jpg)',
             '--filtro': 'brightness(25%)'
         }
 
@@ -190,14 +193,14 @@ function geral() {
 
 input_cor_1.addEventListener("input", cor_principal)
 
-function cor_principal(){
+function cor_principal() {
     root.style.setProperty('--cor-principal', input_cor_1.value);
     root.style.setProperty('--cor-principal-deg', '#00000000');
 }
 
 input_cor_2.addEventListener("input", cor_segundaria)
 
-function cor_segundaria(){
+function cor_segundaria() {
     root.style.setProperty('--cor-segundaria', input_cor_2.value);
 }
 
@@ -205,35 +208,50 @@ function cor_segundaria(){
 
 input_cor_3.addEventListener("input", cor_titulo)
 
-function cor_titulo(){
+function cor_titulo() {
     root.style.setProperty('--cor-titulo', input_cor_3.value);
     root.style.setProperty('--cor-subtitulo', input_cor_3.value);
+    for (var i = 0; i < tituloColor.length; i++) {
+        tituloColor[i].classList.add('tituloColor');
+    }
 }
 
 input_cor_4.addEventListener("input", cor_texto)
 
-function cor_texto(){
+function cor_texto() {
     root.style.setProperty('--cor-texto', input_cor_4.value);
+    for (var i = 0; i < txtColor.length; i++) {
+        txtColor[i].classList.add('txtColor');
+    }
 }
 
 input_cor_5.addEventListener("input", cor_menuFundo)
 
-function cor_menuFundo(){
+function cor_menuFundo() {
     root.style.setProperty('--menu-cor', input_cor_5.value);
 }
 
 input_cor_6.addEventListener("input", cor_textoMenu)
 
-function cor_textoMenu(){
+function cor_textoMenu() {
     root.style.setProperty('--cor-text-menu', input_cor_6.value);
 }
 
+function resetcolor() {
+    for (var i = 0; i < txtColor.length; i++) {
+        txtColor[i].classList.remove('txtColor');
+    }
+    for (var i = 0; i < tituloColor.length; i++) {
+        tituloColor[i].classList.remove('tituloColor');
+    }
+}
 // resetar
 
 function resetConf() {
     barraFont.value = 100;
     barraImg.value = 100;
     barraGeral.value = 100;
+    resetcolor()
 
     if (barraFont.value > 125) {
         for (var i = 0; i < txt_125.length; i++) {
