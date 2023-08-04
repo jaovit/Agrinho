@@ -24,7 +24,7 @@
   --sub-titulo: #EBCCBB;
   --cor-texto: #c9c2c0;
   --borda: solid .01vw rgb(172, 170, 170);
-  --background-card: url(../img/mocha-01_3eb3a5cd.jpg);
+  --background-card: url(../img/fundo.jpeg);
   --filtro: brightness(35%);
 }
 
@@ -37,7 +37,7 @@
     --sub-titulo: #242424;
     --cor-texto: #2e2e2e;
     --borda: solid .01vw rgb(70, 70, 70);
-    --background-card: url(../img/oatmeal-01_4e7de307.jpg);
+    --background-card: url(../img/fundo.jpeg);
     --filtro: brightness(75%);
   }
 }

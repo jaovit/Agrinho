@@ -10,7 +10,7 @@
 .template::before {
     top: 0;
     left: 0;
-    background-image: url(../img/fundo.jpeg);
+    background-image: url(../img/fundo_3.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -19,7 +19,7 @@
 }
 
 .template.claro::before {
-    filter: opacity(.75) brightness(75%);
+    filter: opacity(.75) brightness(50%);
 }
 
 .template::after {
@@ -62,7 +62,7 @@
 }
 
 .template .texto.claro {
-    color: rgb(22, 22, 22);
+    color: rgb(17, 17, 17);
     font-weight: 600;
 }
 
