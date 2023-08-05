@@ -103,6 +103,27 @@ function entrar() {
     fundo_element.style.cssText = "display: block"
 }
 
+function fecharCompleto(form) {
+
+    const formulario_entrar = document.getElementById('form_e');
+    const formulario_comentar = document.getElementById('form_c');
+
+
+    if (form) {
+        if (formulario_entrar.checkValidity()) {
+            fechar();
+        } else {
+            formulario_entrar.reportValidity();
+        }
+    } else {
+        if (formulario_comentar.checkValidity()) {
+            fechar();
+        } else {
+            formulario_comentar.reportValidity();
+        }
+    }
+}
+
 function fechar() {
     checkbox.checked = false;
     entrar_element.style.cssText = "display: none"
@@ -117,7 +138,7 @@ function nativo() {
     if (navigator.share !== undefined) {
         navigator.share({
             title: 'Sustentabilidade: Ações que mudam o mundo',
-            text: 'Um texto de resumo',
+            text: 'Como mudar o mundo de maneira sustentável',
             url: 'https://agrinho2023-iota.vercel.app/',
         })
     }
